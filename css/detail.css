@@ -7,6 +7,7 @@ button {
     cursor: pointer;
     border: none;
     background-color: transparent;
+    ;
 }
 
 button:focus {
@@ -60,6 +61,10 @@ header {
     font-size: 20px;
     font-weight: bold;
     color: white;
+}
+
+.header-buttons .button-activated {
+    background-color: #68B2A0;
 }
 
 .header-search {
