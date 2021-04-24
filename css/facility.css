@@ -54,16 +54,19 @@ header {
 }
 
 .header-buttons button {
+  width: 25%;
+  height: 55px;
+}
+
+.green-button {
     background-color: #CDE0C9;
     border-radius: 48px;
-    width: 25%;
-    height: 55px;
     font-size: 20px;
     font-weight: bold;
     color: white;
 }
 
-.header-buttons .button-activated {
+.button-activated {
     background-color: #68B2A0;
 }
 
@@ -108,5 +111,82 @@ header {
     height: 55px;
 }
 
-/* BODY SECTION */
+/* CONTENT SECTION */
+body {
+  position: absolute;
+  top: 12%;
+  min-width: 1000px;
+}
 
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  margin: 0 auto 50px auto;
+  width: 100%;
+  display: flex;
+}
+
+section .back-button {
+  position: relative;
+}
+
+section .arrow-button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  /* width: 10%; */
+}
+
+section .arrow-button img {
+  width: 30px;
+}
+
+section .detail-image {
+  width: 75%;
+}
+
+.detail-tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.detail-tabs button {
+  width: 20%;
+  height: 50px;
+}
+
+.divider {
+  border-bottom: solid 1px #2C6975;
+  width: 100%;
+  height: 50px;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.detail-content p, ol {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.detail-content ol {
+  line-height: 2;
+}
+
+.detail-content li {
+  width: 100%;
+}
+
+.detail-content ol ol {
+  width: 100%;
+  margin: 0;
+}
