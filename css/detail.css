@@ -141,7 +141,7 @@ section .arrow-button {
 }
 
 section .arrow-button img {
-  width: 35px;
+  width: 30px;
 }
 
 section .detail-image {
@@ -157,4 +157,36 @@ section .detail-image {
 .detail-tabs button {
   width: 20%;
   height: 50px;
+}
+
+.divider {
+  border-bottom: solid 1px #2C6975;
+  width: 100%;
+  height: 50px;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.detail-content p, ol {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.detail-content ol {
+  line-height: 2;
+}
+
+.detail-content li {
+  width: 100%;
+}
+
+.detail-content ol ol {
+  width: 100%;
+  margin: 0;
 }
