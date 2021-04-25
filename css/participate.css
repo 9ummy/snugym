@@ -182,7 +182,7 @@ section .detail-image {
     min-width: 400px;
     height: 250px;
     text-align: center;
-    margin-right: 10%;
+    margin-right: 5%;
     border-radius: 30px;
 }
 
@@ -191,7 +191,8 @@ section .detail-image {
     font-size: 20px;
     font-weight: bold;
     color: black;
-    padding-top: 5%;
+    text-align: center;
+    padding: 3%;
 }
 
 .participate-1 button {
@@ -216,7 +217,7 @@ section .detail-image {
     min-width: 400px;
     height: 250px;
     text-align: center;
-    margin-left: 10%;
+    margin-left: 5%;
     border-radius: 30px;
 }
 
@@ -225,7 +226,8 @@ section .detail-image {
     font-size: 20px;
     font-weight: bold;
     color: black;
-    padding-top: 5%;
+    text-align: center;
+    padding: 3%;
 }
 
 .participate-2 button {
@@ -257,7 +259,7 @@ section .detail-image {
     min-width: 400px;
     height: 250px;
     text-align: center;
-    margin-right: 10%;
+    margin-right: 5%;
     border-radius: 30px;
 }
 
@@ -266,7 +268,8 @@ section .detail-image {
     font-size: 20px;
     font-weight: bold;
     color: black;
-    padding-top: 5%;
+    text-align: center;
+    padding: 3%;
 }
 
 .participate-3 button {
@@ -291,7 +294,7 @@ section .detail-image {
     min-width: 400px;
     height: 250px;
     text-align: center;
-    margin-left: 10%;
+    margin-left: 5%;
     border-radius: 30px;
 }
 
@@ -300,7 +303,8 @@ section .detail-image {
     font-size: 20px;
     font-weight: bold;
     color: black;
-    padding-top: 5%;
+    text-align: center;
+    padding: 3%;
 }
 
 .participate-4 button {
@@ -345,26 +349,33 @@ section .detail-image {
     justify-content: space-around;
     align-items: center;
     z-index: 1;
-}
-
-.bottom-bar > input {
+  }
+  
+  .bottom-bar > input {
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 48px;
     height: 30px;
     background-color: #F5F5F2;
-    width: 100%;
-    margin-left: 5%;
+    width: 70%;
+    min-width: 700px;
+    margin-left: 0;
+    margin-right: 0;
     border: none;
     font-size: 18px;
+    letter-spacing: 1px;
+    padding: 5px 3px;
     background-color: #F5F5F2;
-}
-
-.bottom-bar > button img {
-    width: 10%;
-    margin-left: 10%;
+  }
+  
+  .bottom-bar .check-button {
     display: flex;
-}
-
-
+    width: 12%;
+  } 
+  
+  .bottom-bar img {
+    width: 50px;
+    height: 50px;
+  }
+  
