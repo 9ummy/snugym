@@ -263,7 +263,7 @@ section .detail-image {
   background: none;
 }
 
-.footer {
+.bottom-bar {
   position: fixed;
   bottom: 0;
   background-color: white;
@@ -277,22 +277,30 @@ section .detail-image {
   z-index: 1;
 }
 
-.footer > input {
+.bottom-bar > input {
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 48px;
   height: 30px;
   background-color: #F5F5F2;
-  width: 100%;
-  margin-left: 5%;
+  width: 70%;
+  min-width: 700px;
+  margin-left: 0;
+  margin-right: 0;
   border: none;
   font-size: 18px;
+  letter-spacing: 1px;
+  padding: 5px 3px;
   background-color: #F5F5F2;
 }
 
-.footer > button img {
-  width: 10%;
-  margin-left: 10%;
+.bottom-bar .check-button {
   display: flex;
+  width: 12%;
+} 
+
+.bottom-bar img {
+  width: 50px;
+  height: 50px;
 }
