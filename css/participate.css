@@ -371,12 +371,12 @@ section .detail-image {
   }
   
   .bottom-bar > input {
+    background-color: #F5F5F2;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 48px;
     height: 30px;
-    background-color: #F5F5F2;
     width: 100%;
     min-width: 800px;
     margin-left: 10%;
@@ -384,8 +384,7 @@ section .detail-image {
     border: none;
     font-size: 18px;
     letter-spacing: 1px;
-    padding: 5px 3px;
-    background-color: #F5F5F2;
+    padding: 5px 15px;
   }
   
   .bottom-bar .check-button {
