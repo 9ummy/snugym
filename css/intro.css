@@ -111,7 +111,7 @@ header {
 
 .main-login img {
     position: fixed;
-    width: 1440px;
+    width: 1800px;
     height: 800px;
 }
 
@@ -132,6 +132,7 @@ header {
     font-size: 6.66vmin;
     line-height: 9.7vmin;
     color: #FFFFFF;
+    text-shadow: 1px 1px 10px #000;
 }
 
 .whiteline {
@@ -149,6 +150,7 @@ header {
     font-size: 3.33vmin;
     line-height: 4.85vmin;
     color: #FFFFFF;
+    text-shadow: 1px 1px 5px #000;
 }
 
 .main-login-right {
@@ -173,6 +175,7 @@ header {
     line-height: 35px;
     margin-bottom: 6.7%;
     color: #FFFFFF;
+    text-shadow: 1px 1px 5px #000;
 }
 
 .main-login-right input {
@@ -194,6 +197,7 @@ header {
     line-height: 4.85vmin;
     text-align: center;
     color: #FFFFFF;
+    text-shadow: 1px 1px 5px #000;
     width: 44%;
     height: 7.8%;
     border: 4px solid #FFFFFF;
