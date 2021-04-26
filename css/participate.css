@@ -169,7 +169,7 @@ section .detail-image {
 .participate{
     background: none;
     height: 100%;
-    min-height: 900px;
+    min-height: 700px;
 }
 
 .upper {
@@ -223,7 +223,7 @@ section .detail-image {
     background: #F5F5F2;
     width: 45%;
     min-width: 400px;
-    height: 310px;
+    height: 260px;
     text-align: center;
     margin-left: 10%;
     border-radius: 30px;
@@ -245,6 +245,10 @@ section .detail-image {
     padding: 3%;
 }
 
+.participate-2 .more-info {
+    color: #2c6975
+}
+
 .participate-2 .participate-button img {
     display: flex;
     width: 40px;
@@ -257,7 +261,7 @@ section .detail-image {
     background: white;
     display: flex;
     height: 250px;
-    margin-top: 120px;
+    margin-top: 70px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -266,7 +270,7 @@ section .detail-image {
     background: #F5F5F2;
     width: 45%;
     min-width: 400px;
-    height: 310px;
+    height: 260px;
     text-align: center;
     margin-right: 10%;
     border-radius: 30px;
@@ -289,6 +293,10 @@ section .detail-image {
     padding: 3%;
 }
 
+.participate-3 .more-info {
+    color: #2c6975
+}
+
 .participate-3 .participate-button img {
     display: flex;
     width: 40px;
@@ -301,7 +309,7 @@ section .detail-image {
     background: #F5F5F2;
     width: 45%;
     min-width: 400px;
-    height: 310px;
+    height: 260px;
     text-align: center;
     margin-left: 10%;
     border-radius: 30px;
@@ -312,6 +320,10 @@ section .detail-image {
     height: 80px;
     border-radius: 100%;
     padding: 3%;    
+}
+
+.participate-4 .more-info {
+    color: #2c6975
 }
 
 .participate-4 p {
