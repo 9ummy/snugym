@@ -109,6 +109,12 @@ header {
     height: 33px;
 }
 
+.main-login img {
+    position: fixed;
+    width: 1440px;
+    height: 800px;
+}
+
 .main-login-left {
     box-sizing: border-box;
     position: fixed;
@@ -117,7 +123,6 @@ header {
     min-width: 200px;
     height: 88%;
     min-height: 500px;
-    background-color: aquamarine;
 }
 
 .main-login-left h1 {
@@ -126,7 +131,6 @@ header {
     font-weight: bold;
     font-size: 6.66vmin;
     line-height: 9.7vmin;
-    overflow: hidden;
     color: #FFFFFF;
 }
 
@@ -145,7 +149,6 @@ header {
     font-size: 3.33vmin;
     line-height: 4.85vmin;
     color: #FFFFFF;
-    overflow: hidden;
 }
 
 .main-login-right {
@@ -157,7 +160,6 @@ header {
     height: 88%;
     min-height: 500px;
     margin-left: 50%;
-    background-color: rgb(127, 219, 255);
 }
 
 .main-login-right section {
@@ -181,14 +183,15 @@ header {
     border-radius: 24px;
     background-color: rgba(0, 0, 0, 0);
     padding-left: 2%;
+    padding: 5px 0 5px 15px;
     color: #FFFFFF;
 }
 
 .main-login-right h4 {
     margin-top: 18%;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 3.33vmin;
+    line-height: 4.85vmin;
     text-align: center;
     color: #FFFFFF;
     width: 44%;
