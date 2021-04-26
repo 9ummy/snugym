@@ -118,44 +118,38 @@ body {
     min-width: 1000px;
   }
   
-  main {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .top {
-      background: white;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap ;
-      height: 250px;
+main {
+  width: 80%;
+  margin: 0 auto;
+}
 
-
-  }
+.top {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+}
 
 
 .pic {
     display: flex;
     width: 300px;
-    height: 300px;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px 
+    rgba(0, 0, 0, 0.25));
     border-radius: 24px;
     flex-direction: column;
-    margin-top: 10%;
-
+    margin: 3% 0;
 }
 
 .title {
     width: 300px;
     height: 35px;
-
     font-size: 20px;
     font-weight: bold;
     color: black;
-    padding: 3%;
-
+    padding: 5% 3% 0 3%;
 }
+
 .location{
     width: 231px;
     height: 35px;
