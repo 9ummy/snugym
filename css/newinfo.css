@@ -126,11 +126,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     left: 0;
-    width: 50%;
-    min-width: 720px;
-    height: 100%;
-    min-height: 800px;
     background-color: #68B2A0;
 }
 
@@ -168,9 +165,6 @@ main {
 
 .right {
     right: 0;
-    width: 40%;
-    min-width: 576px;
-    height: 90%;
     background-color: #E0ECDE;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
