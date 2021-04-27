@@ -128,6 +128,8 @@ main {
     align-items: center;
     text-align: center;
     left: 0;
+    min-width: 720px;
+    min-height: 800px;
     background-color: #68B2A0;
 }
 
@@ -165,6 +167,7 @@ main {
 
 .right {
     right: 0;
+    min-width: 576px;
     background-color: #E0ECDE;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
