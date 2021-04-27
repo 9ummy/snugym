@@ -128,6 +128,7 @@ main {
     align-items: center;
     text-align: center;
     left: 0;
+    width: 50%;
     min-width: 720px;
     min-height: 800px;
     background-color: #68B2A0;
@@ -167,30 +168,31 @@ main {
 
 .right {
     right: 0;
-    min-width: 576px;
+    width: 50%;
+    min-width: 650px;
     background-color: #E0ECDE;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(17, 1fr);
-    grid-template-areas: "name input-name input-name"
-    "location input-location input-location"
-    "capacity input-capacity input-capacity"
-    ". . ."
-    "equipment treadmil input-treadmil"
-    "equipment rack input-rack"
-    "equipment legpress input-legpress"
-    ". . ."
-    "locker input-locker input-locker"
-    "shower input-shower input-shower"
-    ". . ."
-    "price month1 input-month1"
-    "price month3 input-month3"
-    "price month12 input-month12"
-    ". . ."
-    ". submit ."
-    ". submit .";
+    grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-areas: ". . . . ."
+    ". name input-name input-name ."
+    ". location input-location input-location ."
+    ". capacity input-capacity input-capacity ."
+    ". . . . ."
+    ". equipment treadmil input-treadmil. "
+    ". equipment rack input-rack ."
+    ". equipment legpress input-legpress ."
+    ". . . . ."
+    ". locker input-locker input-locker ."
+    ". shower input-shower input-shower ."
+    ". . . . ."
+    ". price month1 input-month1 ."
+    ". price month3 input-month3 ."
+    ". price month12 input-month12 ."
+    ". . . . ."
+    ". . submit . ."
+    ". . submit . .";
     
-    padding: 5%;
     text-align: right;
     font-size: 24px;
     line-height: 34.75px;
