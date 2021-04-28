@@ -206,3 +206,18 @@ header {
     background-color: rgba(0, 0, 0, 0);
 
 }
+
+.main-login-right a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main-login-right a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main-login-right a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}

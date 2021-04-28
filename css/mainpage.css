@@ -150,6 +150,21 @@ main {
     padding: 5% 3% 0 3%;
 }
 
+.title a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.title a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.title a:hover {
+    color: black;
+    text-decoration: none;
+}
+
 .location{
     width: 231px;
     height: 35px;

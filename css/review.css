@@ -59,6 +59,21 @@ header {
   height: 55px;
 }
 
+.header-buttons button a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header-buttons button a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header-buttons button a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .green-button {
     background-color: #CDE0C9;
     border-radius: 48px;
