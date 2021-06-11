@@ -272,14 +272,13 @@ section .detail-image {
   width: 50px;
   height: 50px;
   position: fixed;
-  bottom: 10%;
-  right: 2%;
+  bottom: 13%;
+  right: 1%;
   display: flex;
   background: none;
 }
 
 .bottom-bar {
-  position: fixed;
   display: inline-flex;
   bottom: 0;
   background-color: white;
@@ -376,6 +375,7 @@ section .detail-image {
 .bottom-bar .check-button {
   width: 5%;
   display: inline-block;
+  margin-top: 9%;
 } 
 
 .bottom-bar .check-button img {
