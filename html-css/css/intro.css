@@ -183,6 +183,7 @@ header {
     box-sizing: border-box;
     border-radius: 24px;
     background-color: rgba(0, 0, 0, 0);
+<<<<<<< HEAD
     color: white;
     font-size: 24px;
     text-align: center;
@@ -192,3 +193,17 @@ header {
 .main-login-right h4 input{
     font-weight: bold;
 }
+=======
+    padding-left: 2%;
+    padding: 5px 0 5px 15px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.main-login-right h4 input{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+>>>>>>> 50bf5e9942ce32bd0f052984385025c5fb7d46c5
