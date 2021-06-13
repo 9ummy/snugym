@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="header-logo">
-            <a href="./intro.html">
+            <a href="/users/newx">
                 <img src="../assets/whitelogo.png">
             </a>
         </div>
@@ -73,6 +73,9 @@
                     </p>
                     <h4>
                         <input type="submit" value="회원가입">
+                        <div class="notice">
+                            <%= flash[:alert] %><br>
+                        </div>
                     </h4>
                     <% end %>
                 </section>

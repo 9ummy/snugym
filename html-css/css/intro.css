@@ -203,3 +203,7 @@ header {
     font-weight: bold;
     text-align: center;
 }
+
+.notice {
+    color: white;
+}
