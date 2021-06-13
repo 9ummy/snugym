@@ -28,7 +28,7 @@
         <div class ="header-login">
             <a href="login.html">
             <button>
-                로그인
+                <%= link_to '로그인', sessions_new_path %>
             </button>
             </a>
         </div>
@@ -60,6 +60,7 @@
             </div>
             <div class="main-login-right">
                 <section>
+                    <%= form_tag sessions_path do %>
                     <p>
                         아이디 <br>
                         <input type="text" name="name">
@@ -70,7 +71,9 @@
                     </p>
                     <h4>
                         <input type="submit" value="로그인하기">
+                        <%= flash[:alert] %>
                     </h4>
+                    <% end %>
                 </section>
             </div>
         </div>
