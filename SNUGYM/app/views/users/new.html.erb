@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SNUGYM</title>
+    <link rel="stylesheet" type="text/css" href="../css/intro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="/users/new">
+                <img src="../assets/whitelogo.png">
+            </a>
+        </div>
+        <div class="header-buttons">
+            <button class="button-activated">
+                <a href="/users/new" style="color: white; text-decoration: none">메인</a>
+            </button>
+            <button>
+                공지
+            </button>
+            <button>
+                문의
+            </button>
+        </div>
+        <div class ="header-login">
+            <button>
+                <a href="/sessions/new" style="text-decoration: none; color: white">로그인</a>
+            </button>
+        </div>
+        <div class="header-search">
+            <button>
+                <img src="../assets/whitesearch.png" alt="search icon"/>
+            </button>
+        </div>
+        <div class="header-instagram">
+            <button>
+                <img src="../assets/instagram 2.png">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="main-login">
+            <img src="../assets/gympic11.png">
+            <div style="white-space: nowrap;" class="main-login-left">
+                <h1>
+                    이제는 <br>
+                    정착할 시간이에요.
+                </h1>
+                <div class="whiteline">
+                </div>
+                <h3>
+                    헬스장, 필라테스, 그리고 요가까지 <br>
+                    멀리 갈 필요는 없답니다.
+                </h3>
+            </div>
+            <div class="main-login-right">
+                <section>
+                    <%= form_tag users_path do %>
+                    <p>
+                        아이디 <br>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        비밀번호 <br>
+                        <input type="password" name="password">
+                    </p>
+                    <p>
+                        비밀번호 확인 <br>
+                        <input type="password" name="password_confirmation">
+                    </p>
+                    <h4>
+                        <input type="submit" value="회원가입" onclick="alert('회원가입하시겠습니까?')">
+                        <div class="notice">
+                            <%= flash[:alert] %>
+                        </div>
+                    </h4>
+                    <% end %>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
