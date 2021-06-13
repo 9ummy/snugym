@@ -10,13 +10,13 @@
 <body>
     <header>
         <div class="header-logo">
-            <a href="./intro.html">
+            <a href="/users/new" style="text-decoration: none">
                 <img src="../assets/whitelogo.png">
             </a>
         </div>
         <div class="header-buttons">
             <button class="button-activated">
-                메인
+               <a href="/sessions/new" style="color: white; text-decoration: none">메인</a>
             </button>
             <button>
                 공지
@@ -28,7 +28,7 @@
         <div class ="header-login">
             <a href="login.html">
             <button>
-                <%= link_to '로그인', sessions_new_path %>
+                <a href="/sessions/new" style="text-decoration: none; color: white">로그인</a>
             </button>
             </a>
         </div>
@@ -71,7 +71,6 @@
                     </p>
                     <h4>
                         <input type="submit" value="로그인하기">
-                        <%= flash[:alert] %>
                     </h4>
                     <% end %>
                 </section>
