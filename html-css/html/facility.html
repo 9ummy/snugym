@@ -10,33 +10,20 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="header-logo">
-            <a href="./intro.html">
-                <img src="../assets/logo.png">
-            </a>
-        </div>
-        <div class="header-buttons">
-            <button class="button-activated green-button">
-                헬스
-            </button>
-            <button class="green-button">
-                요가
-            </button>
-            <button class="green-button">
-                필라테스
-            </button>
-        </div>
-        <div class="header-search">
-            <input type="text">
-            <button>
-                <img src="../assets/search.png" alt="search icon"/>
-            </button>
-        </div>
-        <div class="header-menu">
-            <button>
-                <img src="../assets/hamburger.png" alt="hamburger menu"/>
-            </button>
-        </div>
+      <div class="detail-tabs">
+        <button class="green-button button-activated" onClick="location.href='./facility.html'">
+          시설
+        </button>
+        <button class="green-button" onClick="location.href='./price.html'">
+          가격
+        </button>
+        <button class="green-button" onClick="location.href='./participate.html'">
+          참가
+        </button>
+        <button class="green-button" onClick="location.href='./review.html'">
+          후기
+        </button>
+      </div>
     </header>
     <main>
       <!-- PHOTO -->
@@ -53,28 +40,13 @@
           </button>
         </div>
       </section>
-      <!-- MENU TABS -->
-      <div class="detail-tabs">
-        <button class="green-button button-activated" onClick="location.href='./facility.html'">
-          시설
-        </button>
-        <button class="green-button" onClick="location.href='./price.html'">
-          가격
-        </button>
-        <button class="green-button" onClick="location.href='./participate.html'">
-          참가
-        </button>
-        <button class="green-button" onClick="location.href='./review.html'">
-          후기
-        </button>
-      </div>
+
       <!-- DIVIDER -->
       <div class="divider">
       </div>
       <!-- CONTENT -->
       <section class="detail-content">
         <p>
-          ＜관악 헬스 시설안내＞<br/><br/>
           저희 관악 헬스는 다음과 같은 시설을 보유하고 있습니다.<br/><br/>
         </p>
         <ol type="1">
@@ -104,5 +76,12 @@
         </ol>
       </section>
     </main>
+    <div class="scrollback">
+      <button>
+          <a href="#">
+              <img src="../assets/scrollback.png">
+          </a>
+      </button>
+  </div>
 </body>
 </html>
