@@ -34,44 +34,15 @@ header {
     z-index: 1;
 }
 
-.header-logo {
-    width: 16%;
-    margin: 0 2%;
+.detail-tabs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.header-logo img {
-    display: block;
-    height: 60px;
-    padding: 5px;
-    margin: auto;
-}
-
-.header-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 38%;
-    margin-right: 2%;
-}
-
-.header-buttons button {
-  width: 25%;
-  height: 55px;
-}
-
-.header-buttons button a:link {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.header-buttons button a:visited {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.header-buttons button a:hover {
-  color: #FFFFFF;
-  text-decoration: none;
+.detail-tabs button {
+  width: 20%;
+  height: 50px;
 }
 
 .green-button {
@@ -84,47 +55,6 @@ header {
 
 .button-activated {
     background-color: #68B2A0;
-}
-
-.header-search {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 48px;
-    width: 30%;
-    height: 50px;
-    background-color: #F5F5F2;
-}
-
-.header-search input {
-    width: 70%;
-    margin-left: 5%;
-    border: none;
-    font-size: 18px;
-    background-color: #F5F5F2;
-}
-
-.header-search button {
-    width: 15%;
-    height: 55px;
-    padding: 0;
-}
-
-.header-search img {
-    height: 25px;
-}
-
-.header-menu {
-    width: 10%;
-}
-
-.header-menu button {
-    display: block;
-    margin: auto;
-}
-
-.header-menu img {
-    height: 55px;
 }
 
 /* CONTENT SECTION */
@@ -162,17 +92,6 @@ section .arrow-button img {
 
 section .detail-image {
   width: 75%;
-}
-
-.detail-tabs {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.detail-tabs button {
-  width: 20%;
-  height: 50px;
 }
 
 .divider {

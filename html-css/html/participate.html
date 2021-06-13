@@ -10,33 +10,20 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="header-logo">
-            <a href="./intro.html">
-                <img src="../assets/logo.png">
-            </a>
-        </div>
-        <div class="header-buttons">
-            <button class="button-activated green-button">
-                헬스
+        <div class="detail-tabs">
+            <button class="green-button" onClick="location.href='./facility.html'">
+              시설
             </button>
-            <button class="green-button">
-                요가
+            <button class="green-button" onClick="location.href='./price.html'">
+              가격
             </button>
-            <button class="green-button">
-                필라테스
+            <button class="green-button button-activated" onClick="location.href='./participate.html'">
+              참가
             </button>
-        </div>
-        <div class="header-search">
-            <input type="text">
-            <button>
-                <img src="../assets/search.png" alt="search icon"/>
+            <button class="green-button" onClick="location.href='./review.html'">
+              후기
             </button>
-        </div>
-        <div class="header-menu">
-            <button>
-                <img src="../assets/hamburger.png" alt="hamburger menu"/>
-            </button>
-        </div>
+          </div>
     </header>
     <main>
       <!-- PHOTO -->
@@ -53,57 +40,39 @@
           </button>
         </div>
       </section>
-      <!-- MENU TABS -->
-      <div class="detail-tabs">
-        <button class="green-button" onClick="location.href='./facility.html'">
-          시설
-        </button>
-        <button class="green-button" onClick="location.href='./price.html'">
-          가격
-        </button>
-        <button class="green-button button-activated" onClick="location.href='./participate.html'">
-          참가
-        </button>
-        <button class="green-button" onClick="location.href='./review.html'">
-          후기
-        </button>
-      </div>
+
       <!-- DIVIDER -->
       <div class="divider">
       </div>
         <div class="participate">
             <div class="upper">
                 <div class="participate-1">
-                    <img src="../assets/participate 1.jpg">
                     <p>오늘 관악에서 같이 헬스 할 사람?</p>
                     <p class="more-info">1명 / 3명. 10:00pm</p>
-                    <button class="participate-button">
+                    <button class="participate-button" onclick="alert('참가되었습니다.')">
                         <img src="../assets/tick.png" alt="참가하기">
                     </button>
                 </div>
                 <div class="participate-2">
-                    <img src="../assets/participate 2.jpg">
                     <p>10시에 운동하고 치맥하러 가요</p>
                     <p class="more-info">3명 / 5명. 08:00pm</p>
-                    <button class="participate-button">
+                    <button class="participate-button" onclick="alert('참가되었습니다.')">
                         <img src="../assets/tick.png" alt="참가하기">
                     </button>
                 </div>
             </div>
             <div class="lower">
                 <div class="participate-3">
-                    <img src="../assets/participate 3.jpg">
                     <p>관악 헬스장 가기 전에 가볍게 조깅해요</p>
                     <p class="more-info">2명 / 3명. 05:00pm</p>
-                    <button class="participate-button">
+                    <button class="participate-button" onclick="alert('참가되었습니다.')">
                         <img src="../assets/tick.png" alt="참가하기">
                     </button>
                 </div>
                 <div class="participate-4">
-                    <img src="../assets/participate 4.jpg">
                     <p>목표는 바디프로필 촬영</p>
                     <p class="more-info">4명 / 9명. 상시모집</p>
-                    <button class="participate-button">
+                    <button class="participate-button" onclick="alert('참가되었습니다.')">
                         <img src="../assets/tick.png" alt="참가하기">
                     </button>
                 </div>
@@ -127,7 +96,7 @@
                 <input type="text" placeholder="제목" class="title">
             </div>
         </div>
-        <div class="check-button">
+        <div class="check-button" onclick="alert('작성되었습니다.')">
           <button>
             <img src="../assets/check.png">
           </button>

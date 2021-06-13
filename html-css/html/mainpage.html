@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="../css/mainpage.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
+    <script language="javascript">
+        function showPopup() {window.open("popupwindow.html", "detailsearch", "width=795, height=382, left=400, top=200");}
+    </script>
 </head>
 <body>
     <!-- HEADER -->
@@ -16,7 +19,7 @@
             </a>
         </div>
         <div class="header-buttons">
-            <button class="button-activated green-button">
+            <button class="green-button">
                 헬스
             </button>
             <button class="green-button">
@@ -32,9 +35,9 @@
                 <img src="../assets/search.png" alt="search icon"/>
             </button>
         </div>
-        <div class="header-menu">
+        <div class="header-menu" onclick="showPopup();">
             <button>
-                <img src="../assets/hamburger.png" alt="hamburger menu"/>
+                <img src="../assets/hamburger.png" alt="hamburger"/>
             </button>
         </div>
     </header>
@@ -44,7 +47,7 @@
             <div class="pic">
                 <img src="../assets/fitness_1.png" alt="fitness_1">
                 <p class="title">
-                    <a href="facility.html">
+                    <a href="facility.html" target='_blank'>
                         관악 헬스
                     </a>
                 </p>
@@ -90,7 +93,7 @@
             </div>
             <div class="pic">
                 <img src="../assets/fitness_9.png" alt="fitness_9">
-                <p class="title">에이프릴 필라테스</p>
+                <p class="title">세션 필라테스</p>
                 <p class="location">서울대입구역 근처/4.0</p>
             </div>
         </div>
@@ -99,7 +102,7 @@
 
     <div class="plusbutton">
         <button>
-          <a href="newinfo.html">
+          <a href="newinfo-헬스.html">
             <img src="../assets/plusbutton.png">
           </a>
         </button>
@@ -113,5 +116,5 @@
           </a>
         </button>
       </div>
-
-     
+    </body>
+</html>

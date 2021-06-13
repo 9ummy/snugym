@@ -34,30 +34,16 @@ header {
     z-index: 1;
 }
 
-.header-logo {
-    width: 16%;
-    margin: 0 2%;
-}
-
-.header-logo img {
-    display: block;
-    height: 60px;
-    padding: 5px;
-    margin: auto;
-}
-
-.header-buttons {
+.detail-tabs {
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    width: 38%;
-    margin-right: 2%;
-}
-
-.header-buttons button {
-  width: 25%;
-  height: 55px;
-}
+    width: 100%;
+  }
+  
+  .detail-tabs button {
+    width: 20%;
+    height: 50px;
+  }
 
 .green-button {
     background-color: #CDE0C9;
@@ -69,47 +55,6 @@ header {
 
 .button-activated {
     background-color: #68B2A0;
-}
-
-.header-search {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 48px;
-    width: 30%;
-    height: 50px;
-    background-color: #F5F5F2;
-}
-
-.header-search input {
-    width: 70%;
-    margin-left: 5%;
-    border: none;
-    font-size: 18px;
-    background-color: #F5F5F2;
-}
-
-.header-search button {
-    width: 15%;
-    height: 55px;
-    padding: 0;
-}
-
-.header-search img {
-    height: 25px;
-}
-
-.header-menu {
-    width: 10%;
-}
-
-.header-menu button {
-    display: block;
-    margin: auto;
-}
-
-.header-menu img {
-    height: 55px;
 }
 
 /* CONTENT SECTION */
@@ -149,17 +94,6 @@ section .detail-image {
   width: 75%;
 }
 
-.detail-tabs {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.detail-tabs button {
-  width: 20%;
-  height: 50px;
-}
-
 .divider {
   border-bottom: solid 1px #2C6975;
   width: 100%;
@@ -175,7 +109,7 @@ section .detail-image {
 .upper {
     background: white;
     display: flex;
-    height: 250px;
+    height: 200px;
     margin-top: 70px;
     margin-left: 10%;
     margin-right: 10%;
@@ -185,17 +119,10 @@ section .detail-image {
     background: #F5F5F2;
     width: 45%;
     min-width: 400px;
-    height: 260px;
+    height: 150px;
     text-align: center;
     margin-right: 10%;
     border-radius: 30px;
-}
-
-.participate-1 > img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    padding: 3%;
 }
 
 .participate-1 p {
@@ -223,17 +150,10 @@ section .detail-image {
     background: #F5F5F2;
     width: 45%;
     min-width: 400px;
-    height: 260px;
+    height: 150px;
     text-align: center;
     margin-left: 10%;
     border-radius: 30px;
-}
-
-.participate-2 > img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    padding: 3%;
 }
 
 .participate-2 p {
@@ -260,8 +180,8 @@ section .detail-image {
 .lower {
     background: white;
     display: flex;
-    height: 250px;
-    margin-top: 70px;
+    height: 200px;
+    margin-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -270,18 +190,11 @@ section .detail-image {
     background: #F5F5F2;
     width: 45%;
     min-width: 400px;
-    height: 260px;
+    height: 150px;
     text-align: center;
     margin-right: 10%;
     border-radius: 30px;
     align-items: center;
-}
-
-.participate-3 > img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    padding: 3%;
 }
 
 .participate-3 p {
@@ -309,17 +222,10 @@ section .detail-image {
     background: #F5F5F2;
     width: 45%;
     min-width: 400px;
-    height: 260px;
+    height: 150px;
     text-align: center;
     margin-left: 10%;
     border-radius: 30px;
-}
-
-.participate-4 > img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    padding: 3%;    
 }
 
 .participate-4 .more-info {
@@ -358,9 +264,9 @@ section .detail-image {
 }
 
 .bottom-bar {
-    display: inline-flex;
     position: fixed;
     bottom: 0;
+    display: inline-flex;
     background-color: white;
     width: 100%;
     height: 12%;
@@ -368,6 +274,7 @@ section .detail-image {
     justify-content: space-around;
     align-items: center;
     z-index: 1;
+    margin-top: 0px;
 }
 
 .bottom-bar .input {
@@ -408,7 +315,7 @@ section .detail-image {
 .bottom-bar .lower-input {
     display: flex;
     width: 95%;
-    height: 40%;
+    height: 60%;
     margin-left: 3%;
     margin-bottom: 10px;
 }
