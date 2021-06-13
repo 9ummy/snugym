@@ -66,9 +66,7 @@ header {
     color: white;
 }
 
-.button-activated {
-    background-color: #68B2A0;
-}
+
 
 .header-search {
     display: flex;
