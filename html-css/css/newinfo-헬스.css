@@ -175,7 +175,7 @@ main {
     background-color: #E0ECDE;
     display: grid;
     grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
-    grid-template-rows: repeat(18, 1fr);
+    grid-template-rows: repeat(28, 1fr);
     grid-template-areas: ". . . . ."
     ". name input-name input-name ."
     ". location input-location input-location ."
@@ -192,9 +192,18 @@ main {
     ". price month3 input-month3 ."
     ". price month12 input-month12 ."
     ". . . . ."
+    ". detail input-detail input-detail ."
+    ". detail input-detail input-detail ."
+    ". detail input-detail input-detail ."
+    ". detail input-detail input-detail ."
+    ". detail input-detail input-detail ."
+    ". detail input-detail input-detail ."
+    ". detail input-detail input-detail ."
+    ". detail input-detail input-detail ."
+    ". detail input-detail input-detail ."
+    ". detail input-detail input-detail ."
     ". . submit . ."
-    ". . submit . .";
-    
+    ". . submit . .";   
     text-align: right;
     font-size: 24px;
     line-height: 34.75px;
@@ -212,6 +221,8 @@ main {
     border-radius: 24px;
     border-color: #2C6975;
     color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .right input {
@@ -220,7 +231,8 @@ main {
     background-color: #FFFFFF;
     border-radius: 24px;
     border-color: #FFFFFF;
-    padding: 5px 0 5px 15px;
+    padding: 5px 15px;
+    text-align: center;
 }
 
 .name {
@@ -317,4 +329,12 @@ main {
 
 .input-month12 {
     grid-area: input-month12;
+}
+
+.detail {
+    grid-area: detail;
+}
+
+.input-detail {
+    grid-area: input-detail;
 }
