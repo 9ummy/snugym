@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to sessions_new_path
     else
-      flash.now[:alert] = "failed to register."
+      flash.now[:alert] = "failed to register"
       render 'new'
     end
   end
