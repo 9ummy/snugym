@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   post 'yoga/new', to: 'yoga#create'
   
   get 'pilates/new'
-  post 'pilates/new', to 'pilates#create'
+  post 'pilates/new', to: 'pilates#create'
   
   get 'sessions/new'
   get 'users/new'
