@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR';
+    position: absolute;
+    top: 12%;
+    min-width: 1000px;
+}

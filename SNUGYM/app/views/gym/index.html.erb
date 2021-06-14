@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>SNUGYM</title>
-    <%= stylesheet_link_tag 'gym', media: 'all' %>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
-    <script language="javascript">
-        function showPopup() {window.open("popupwindow.html", "detailsearch", "width=795, height=382, left=400, top=200");}
-    </script>
-</head>
-<body>
-    <!-- HEADER -->
+<!-- HEADER -->
+<div class="facility-index">
     <header>
         <div class="header-logo">
             <a href="index">
@@ -41,78 +29,80 @@
             </button>
         </div>
     </header>
-
+    
     <main>
         <div class="top">
-            <div class="pic">
-                <img src="../assets/fitness_1.png" alt="fitness_1">
-                <p class="title">
-                    <a href="facility.html" target='_blank'>
-                        관악 헬스
-                    </a>
-                </p>
-                <p class="location">서울대입구역 근처/4.5</p>
+            <% @gyms.each do |gym| %>
+                <div class="pic">
+                    <img src="../assets/fitness_1.png" alt="fitness_1">
+                    <p class="title">
+                        <!--<a href="/gym/<%= gym.id %>" target='_blank'>-->
+                        <!--    <%= gym.name %>-->
+                        <!--</a>-->
+                        <%= link_to gym.name, gym%>
+                    </p>
+                    <p class="location"><%= gym.location %></p>
                 </div>
-            <div class="pic">
-                <img src="../assets/fitness_2.png" alt="fitness_2">
-                <p class="title">오후의 요가</p>
-                <p class="location">녹두거리 근처/3.5</p>           
-                </div>
-            <div class="pic">
-                <img src="../assets/fitness_3.png" alt="fitness_3">
-                <p class="title">5G 피트니스 센터 서울대점</p>
-                <p class="location">서울대입구역 근처/3.5</p>
-                </div>
+            <% end %>
+            <!--<div class="pic">-->
+            <!--    <img src="../assets/fitness_2.png" alt="fitness_2">-->
+            <!--    <p class="title">오후의 요가</p>-->
+            <!--    <p class="location">녹두거리 근처/3.5</p>           -->
+            <!--    </div>-->
+            <!--<div class="pic">-->
+            <!--    <img src="../assets/fitness_3.png" alt="fitness_3">-->
+            <!--    <p class="title">5G 피트니스 센터 서울대점</p>-->
+            <!--    <p class="location">서울대입구역 근처/3.5</p>-->
+            <!--    </div>-->
             
         
-            <div class="pic">
-                <img src="../assets/fitness_4.png" alt="fitness_4">
-                <p class="title">요가 피플</p>
-                <p class="location">녹두거리 근처/4.0</p>
-            </div>
-            <div class="pic">
-                <img src="../assets/fitness_5.png" alt="fitness_5">
-                <p class="title">5G 피트니스 센터 낙성대점</p>
-                <p class="location">녹두거리 근처/4.5</p>
-            </div>
-            <div class="pic">
-                <img src="../assets/fitness_6.png" alt="fitness_6">
-                <p class="title">누리 필라테스 서울대점</p>
-                <p class="location">서울대입구역 근처/2.5</p>
-            </div> 
+            <!--<div class="pic">-->
+            <!--    <img src="../assets/fitness_4.png" alt="fitness_4">-->
+            <!--    <p class="title">요가 피플</p>-->
+            <!--    <p class="location">녹두거리 근처/4.0</p>-->
+            <!--</div>-->
+            <!--<div class="pic">-->
+            <!--    <img src="../assets/fitness_5.png" alt="fitness_5">-->
+            <!--    <p class="title">5G 피트니스 센터 낙성대점</p>-->
+            <!--    <p class="location">녹두거리 근처/4.5</p>-->
+            <!--</div>-->
+            <!--<div class="pic">-->
+            <!--    <img src="../assets/fitness_6.png" alt="fitness_6">-->
+            <!--    <p class="title">누리 필라테스 서울대점</p>-->
+            <!--    <p class="location">서울대입구역 근처/2.5</p>-->
+            <!--</div> -->
        
-            <div class="pic">
-                <img src="../assets/fitness_7.png" alt="fitness_7">
-                <p class="title">서울 피트니스 센터</p>
-                <p class="location">녹두거리 근처/3.0</p>
-            </div>
-            <div class="pic">
-                <img src="../assets/fitness_8.png" alt="fitness_8">
-                <p class="title">굿데이 헬스</p>
-                <p class="location">서울대입구역 근처/3.5</p>
-            </div>
-            <div class="pic">
-                <img src="../assets/fitness_9.png" alt="fitness_9">
-                <p class="title">세션 필라테스</p>
-                <p class="location">서울대입구역 근처/4.0</p>
-            </div>
+            <!--<div class="pic">-->
+            <!--    <img src="../assets/fitness_7.png" alt="fitness_7">-->
+            <!--    <p class="title">서울 피트니스 센터</p>-->
+            <!--    <p class="location">녹두거리 근처/3.0</p>-->
+            <!--</div>-->
+            <!--<div class="pic">-->
+            <!--    <img src="../assets/fitness_8.png" alt="fitness_8">-->
+            <!--    <p class="title">굿데이 헬스</p>-->
+            <!--    <p class="location">서울대입구역 근처/3.5</p>-->
+            <!--</div>-->
+            <!--<div class="pic">-->
+            <!--    <img src="../assets/fitness_9.png" alt="fitness_9">-->
+            <!--    <p class="title">세션 필라테스</p>-->
+            <!--    <p class="location">서울대입구역 근처/4.0</p>-->
+            <!--</div>-->
         </div>
     </main> 
-
+    
     <div class="plusbutton">
         <button>
-          <a href="new">
+          <a href="/gym/new">
             <img src="../assets/plusbutton.png">
           </a>
         </button>
       </div>    
-
+    
     <div class="upbutton">
         <button>
           <a href="#">
             <img src="../assets/upbutton.png">
           </a>
         </button>
-      </div>
-    </body>
-</html>
+     </div>
+</div>
