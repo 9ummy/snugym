@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   # get 'gym/:id', to: 'gym#show'
   
   get 'gym', to: 'gym#index'
-  get 'gym/:id', to: 'gym#show'
-  get 'gym/new'
+  get 'gym/show/:id', to: 'gym#show'
+  get 'gym/new', to: 'gym#new'
   post 'gym/new', to: 'gym#create'
   
   get 'yoga', to: 'yoga#index'

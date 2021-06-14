@@ -3,6 +3,10 @@ class GymController < ApplicationController
     @gyms = Gym.all
   end
   
+  def new
+    render gym_new_path
+  end
+  
   def show
     @gym = Gym.find(params[:id])
   end
