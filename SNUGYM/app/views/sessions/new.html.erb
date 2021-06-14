@@ -8,13 +8,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div class="header-logo">
+        <header class="header-sessions">
+            <div class="header-logo-sessions">
                 <a href="/users/new" style="text-decoration: none">
                     <img src="../assets/whitelogo.png">
                 </a>
             </div>
-            <div class="header-buttons">
+            <div class="header-buttons-sessions">
                 <button class="button-activated">
                    <a href="/users/new" style="color: white; text-decoration: none">메인</a>
                 </button>
@@ -25,28 +25,28 @@
                     문의
                 </button>
             </div>
-            <div class ="header-login">
+            <div class ="header-login-sessions">
                 <a href="login.html">
                 <button>
                     <a href="/sessions/new" style="text-decoration: none; color: white">로그인</a>
                 </button>
                 </a>
             </div>
-            <div class="header-search">
+            <div class="header-search-sessions">
                 <button>
                     <img src="../assets/whitesearch.png" alt="search icon"/>
                 </button>
             </div>
-            <div class="header-instagram">
+            <div class="header-instagram-sessions">
                 <button>
                     <img src="../assets/instagram 2.png">
                 </button>
             </div>
         </header>
         <main>
-            <div class="main-login">
+            <div class="main-login-sessions">
                 <img src="../assets/gympic11.png">
-                <div style="white-space: nowrap;" class="main-login-left">
+                <div style="white-space: nowrap;" class="main-login-left-sessions">
                     <h1>
                         이제는 <br>
                         정착할 시간이에요.
@@ -58,7 +58,7 @@
                         멀리 갈 필요는 없답니다.
                     </h3>
                 </div>
-                <div class="main-login-right">
+                <div class="main-login-right-sessions">
                     <section>
                         <%= form_tag sessions_path do %>
                         <p>
@@ -71,7 +71,7 @@
                         </p>
                         <h4>
                             <input type="submit" value="로그인하기">
-                            <div class="notice">
+                            <div class="notice-sessions">
                                 <%= flash[:alert] %><br>
                             </div>
                         </h4>
