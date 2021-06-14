@@ -21,7 +21,7 @@ class GymController < ApplicationController
                   price_12m: params[:price_12m])
                   
       if @gym.save
-        redirect_to gym_index_path
+        redirect_to gym_path
       else
         render :index
       end

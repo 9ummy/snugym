@@ -2,12 +2,15 @@ Rails.application.routes.draw do
   # get 'gym', to: 'gym#index'
   # get 'gym/:id', to: 'gym#show'
   
+  get 'gym', to: 'gym#index'
   get 'gym/new'
   post 'gym/new', to: 'gym#create'
   
+  get 'yoga', to: 'yoga#index'
   get 'yoga/new'
   post 'yoga/new', to: 'yoga#create'
   
+  get 'pilates', to: 'pilates#index'
   get 'pilates/new'
   post 'pilates/new', to: 'pilates#create'
   
@@ -18,9 +21,6 @@ Rails.application.routes.draw do
   
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create]
-  resources :gym
-  resources :yoga
-  resources :pilates
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
