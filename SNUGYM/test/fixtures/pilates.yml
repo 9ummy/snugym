@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  capacity: 
+  description: MyString
+  locker_room: 
+  price_1m: 
+  price_3m: 
+  price_12m: 
+
+two:
+  location: MyString
+  capacity: 
+  description: MyString
+  locker_room: 
+  price_1m: 
+  price_3m: 
+  price_12m: 
