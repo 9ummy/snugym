@@ -10,13 +10,53 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20210612160613) do
+ActiveRecord::Schema.define(version: 20210613192504) do
+
+  create_table "gyms", force: :cascade do |t|
+    t.string   "location"
+    t.decimal  "capacity"
+    t.string   "description"
+    t.decimal  "treadmill"
+    t.decimal  "barbell"
+    t.decimal  "leg_press"
+    t.decimal  "locker_room"
+    t.decimal  "shower_room"
+    t.decimal  "price_1m"
+    t.decimal  "price_3m"
+    t.decimal  "price_12m"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "pilates", force: :cascade do |t|
+    t.string   "location"
+    t.decimal  "capacity"
+    t.string   "description"
+    t.decimal  "locker_room"
+    t.decimal  "price_1m"
+    t.decimal  "price_3m"
+    t.decimal  "price_12m"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "yogas", force: :cascade do |t|
+    t.string   "location"
+    t.decimal  "capacity"
+    t.string   "description"
+    t.decimal  "locker_room"
+    t.decimal  "price_1m"
+    t.decimal  "price_3m"
+    t.decimal  "price_12m"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

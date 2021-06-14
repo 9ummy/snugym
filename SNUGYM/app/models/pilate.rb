@@ -1,0 +1,2 @@
+class Pilate < ApplicationRecord
+end
