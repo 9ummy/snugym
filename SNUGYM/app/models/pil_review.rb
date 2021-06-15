@@ -1,0 +1,2 @@
+class PilReview < ApplicationRecord
+end
