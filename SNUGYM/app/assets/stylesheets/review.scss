@@ -104,66 +104,84 @@ section .detail-image {
   margin-top: 50px;
 }
 
-.review1 {
+.review-sample {
   width: 100%;
   background: #F5F5f2;
   border-radius: 30px;
   margin-bottom: 5%;
 }
 
-.review1 p {
+.review-sample p {
   margin-left: 30px;
   margin-right: 30px;
   line-height: 200%;
 }
-.review1 .review-title {
+.review-sample .review-title {
   font-size: 24px;
   font-weight: bold;
   padding-top: 10px;
 }
 
-.review1 .review-info{
+.review-sample .review-info{
     font-size: 18px;
     font-weight: normal;
     margin-bottom: 5px;
 }
 
-.review1 .review-text {
+.review-sample .review-text {
   font-size: 18px;
   font-weight: normal;
   line-height: 26px;
-  padding-bottom: 20px;
+  margin-bottom: 1%;
 }
 
-.review2 {
+.review-sample .delete {
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
+.following-reviews {
   width: 100%;
   background: #F5F5f2;
   border-radius: 30px;
+  margin-bottom: 5%;
 }
 
-.review2 p {
+.following-reviews p {
   margin-left: 30px;
   margin-right: 30px;
   line-height: 200%;
 }
-.review2 .review-title {
+.following-reviews .review-title {
   font-size: 24px;
   font-weight: bold;
   padding-top: 10px;
 }
 
-.review2 .review-info{
+.following-reviews .review-info{
     font-size: 18px;
     font-weight: normal;
     margin-bottom: 5px;
 }
 
-.review2 .review-text {
+.following-reviews .review-text {
   font-size: 18px;
   font-weight: normal;
   line-height: 26px;
-  padding-bottom: 20px;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
+}
+
+.following-reviews .delete{
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-bottom: 1%;
 }
 
 .scrollback {

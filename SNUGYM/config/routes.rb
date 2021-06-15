@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'review/index' => 'review#show'
   get 'review/index' => 'review#new'
   post 'review/index' => 'review#create'
+  post 'review/index/:id' => 'review#destroy'
 
   # get 'gym', to: 'gym#index'
   # get 'gym/:id', to: 'gym#show'
