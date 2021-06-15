@@ -15,13 +15,22 @@ class GymController < ApplicationController
     if params[:search].blank?
       redirect_to gym_path and return
     else
-      @gyms = Gym.all.where("name LIKE ?", "%#{params[:search]}%")
+      @gyms = Gym.search(params[:search])
     end
   end
   
   def detailsearch
     render gym_detailsearch_path
   end
+  
+  def detailsearchresult
+    @gyms = Gym.where(["name LIKE ?", "%#{params[:searchname]}%"]) if params[:searchname].present?
+    @gyms = Gym.where(["location LIKE ?", "%#{params[:searchlocation]}%"]).where(["capacity >= ?", params[:searchcapacity]]) if params[:searchcapacity].present? or params[:searchlocation].present?
+    @gyms = Gym.where(["treadmill >= ?", params[:searchtreadmill]]) if params[:searchtreadmill].present?
+    @gyms = Gym.where(["barbell >= ?", params[:searchbarbell]]) if params[:searchbarbell].present?
+    @gyms = Gym.where(["leg_press >= ?", params[:searchleg_press]]) if params[:searchleg_press].present?
+  end
+    
   
   def create
       @gym = Gym.new(name: params[:name],

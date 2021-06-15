@@ -6,8 +6,8 @@
     border-width: 2px;
     width: 70%;
     min-width: 1000px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
     
     button {
         cursor: pointer;
@@ -29,7 +29,7 @@
         grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
         grid-template-rows: repeat(11, 1fr);
         grid-template-areas: ". . . . ."
-        ". type input-type input-type ."
+        ". name input-name input-name ."
         ". . . . ."
         ". location input-location input-location ."
         ". . . . ."
@@ -56,12 +56,12 @@
         text-align: center;
     }
     
-    .type {
-        grid-area: type;
+    .name {
+        grid-area: name;
     }
     
-    .input-type {
-        grid-area: input-type;
+    .input-name {
+        grid-area: input-name;
     }
     
     .location {

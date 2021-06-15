@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   post 'gym/new', to: 'gym#create'
   get 'gym/detailsearch', to: 'gym#detailsearch'
   get 'gym/search', to: 'gym#search'
+  get 'gym/detailsearchresult', to: 'gym#detailsearchresult'
   
   get 'yoga', to: 'yoga#index'
   get 'yoga/show/:id', to: 'yoga#show'

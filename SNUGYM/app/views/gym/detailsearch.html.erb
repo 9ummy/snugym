@@ -1,39 +1,35 @@
+<%= form_tag(gym_detailsearchresult_path, method: "get") do %>
 <div id="gym-detailsearch">
     <div class="left">
-        <div class="type">
-            운동 종류
+        <div class="name">
+            이름
         </div>
-        <div class="input-type">
-            <input list="type" value="헬스" readonly>
+        <div class="input-name">
+            <%= search_field_tag :searchname, params[:searchname] %>
         </div>
         <div class="location">
             위치
         </div>
         <div class="input-location">
-            <input list="location">
-            <datalist id="location">
-                <option value="서울대입구역 근처"></option>
-                <option value="낙성대역 근처"></option>
-                <option value="녹두거리 근처"></option>
-            </datalist>
+            <%= search_field_tag :searchlocation, params[:searchlocation] %>
         </div>
         <div class="capacity">
             수용 가능 인원
         </div>
         <div class="input-capacity">
-            <input type="integer">
+            <%= search_field_tag :searchcapacity, params[:searchcapacity] %>
         </div>
         <div class="price">
             가격
         </div>
         <div class="input-price_1m">
-            <input type="integer">
+            <%= search_field_tag :searchprice_1m, params[:searchprice_1m] %>
         </div>
         <div class="input-price_3m">
-            <input type="integer">
+            <%= search_field_tag :searchprice_3m, params[:searchprice_3m] %>
         </div>
         <div class="input-price_12m">
-            <input type="integer">
+            <%= search_field_tag :searchprice_12m, params[:searchprice_12m] %>
         </div>
     </div>  
     <div class="right">
@@ -41,24 +37,23 @@
             런닝머신
         </div>
         <div class="input-running">
-            <input type="integer">
+            <%= search_field_tag :searchtreadmill, params[:searchtreadmill] %>
         </div>
         <div class="barbell">
-            바벨
+            바벨랙
         </div>
         <div class="input-barbell">
-            <input type="integer">
+            <%= search_field_tag :searchbarbell, params[:searchbarbell] %>
         </div>
         <div class="legpress">
             레그 프레스
         </div>
         <div class="input-legpress">
-            <input type="integer">
+            <%= search_field_tag :searchleg_press, params[:searchleg_press] %>
         </div>
         <div class="submit">
-            <button>
-                검색하기
-            </button>
+                <%= button_tag "검색하기" %>
         </div>
     </div>
 </div>
+<% end %>
