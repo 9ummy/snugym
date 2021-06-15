@@ -12,6 +12,24 @@
 
 ActiveRecord::Schema.define(version: 20210615141106) do
 
+  create_table "participates", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.text     "number"
+    t.time     "time"
+    t.text     "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "realparticipates", force: :cascade do |t|
+    t.string   "title"
+    t.text     "content"
+  end
+  
   create_table "gyms", force: :cascade do |t|
     t.string   "name"
     t.string   "location"
@@ -71,5 +89,4 @@ ActiveRecord::Schema.define(version: 20210615141106) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
-
 end

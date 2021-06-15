@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'post/index'
+  get 'post/new1'
+  get 'post/create'
+  post 'post/create'
+  get 'post/edit'
+  get 'post/update'
+  get 'post/destroy'  
+  
   get 'review/index'
   get 'review/index' => 'review#show'
   get 'review/index' => 'review#new'
@@ -25,7 +33,6 @@ Rails.application.routes.draw do
   
   get 'sessions/new'
   get 'users/new'
-  
   
   root 'users#new'
   
