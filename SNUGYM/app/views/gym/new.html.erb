@@ -1,36 +1,36 @@
 <div class="facility-new">
-    <header class="gym-new-header">
+    <header class="new-header">
         <div class="header-logo">
-            <a href="./intro.html">
-                <img src="../assets/logo.png">
+            <a href="/gym">
+                <img src="/images/logo.png">
             </a>
         </div>
         <div class="header-buttons">
-            <a href="/gym">
+            <a href="/gym" class="green-button">
                 헬스
             </a>
             <a href="/yoga">
                 요가
             </a>
-            <a href="/pilates" class="green-button">
+            <a href="/pilates">
                 필라테스
             </a>
         </div>
         <div class="header-search">
             <input type="text">
         <button class="header-search-button">
-                <img src="../assets/search.png" alt="search icon"/>
+                <img src="/images/search.png" alt="search icon"/>
             </button>
         </div>
         <div class="header-menu">
             <button>
-                <img src="../assets/hamburger.png" alt="hamburger menu"/>
+                <img src="/images/hamburger.png" alt="hamburger menu"/>
             </button>
         </div>
     </header>
     <main>
         <div class="left">
-            <img src="../assets/likesha.png">
+            <img src="/images/likesha.png">
             <h1>
                 시설의 정보를 등록해주세요
             </h1>
@@ -41,7 +41,7 @@
             </h3>
         </div>
         <%= form_tag gym_new_path do %>
-            <div class="right">
+            <div class="gym-right">
                 <div class="name">
                     이름
                 </div>

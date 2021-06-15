@@ -16,7 +16,7 @@
     }
     
     
-    .gym-new-header {
+    .new-header {
         position: fixed;
         top: 0;
         background-color: white;
@@ -168,7 +168,7 @@
         min-width: 470px;
     }
     
-    .right {
+    .gym-right {
         right: 0;
         width: 50%;
         min-width: 650px;
@@ -195,6 +195,38 @@
         ". detail input-detail input-detail ."
         ". detail input-detail input-detail ."
         ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". . submit . ."
+        ". . submit . .";   
+        text-align: right;
+        font-size: 24px;
+        line-height: 34.75px;
+        font-weight: 400;
+    }
+    
+    .right {
+        right: 0;
+        width: 50%;
+        min-width: 650px;
+        background-color: #E0ECDE;
+        display: grid;
+        grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+        grid-template-rows: repeat(28, 1fr);
+        grid-template-areas: ". . . . ."
+        ". name input-name input-name ."
+        ". location input-location input-location ."
+        ". capacity input-capacity input-capacity ."
+        ". . . . ."
+        ". locker input-locker input-locker ."
+        ". shower input-shower input-shower ."
+        ". . . . ."
+        ". price month1 input-month1 ."
+        ". price month3 input-month3 ."
+        ". price month12 input-month12 ."
+        ". . . . ."
         ". detail input-detail input-detail ."
         ". detail input-detail input-detail ."
         ". detail input-detail input-detail ."
@@ -226,6 +258,16 @@
     }
     
     .right input {
+        width: 60%;
+        height: 40%;
+        background-color: #FFFFFF;
+        border-radius: 24px;
+        border-color: #FFFFFF;
+        padding: 5px 15px;
+        text-align: center;
+    }
+    
+    .gym-right input {
         width: 60%;
         height: 40%;
         background-color: #FFFFFF;

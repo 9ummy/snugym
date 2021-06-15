@@ -10,37 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20210614090035) do
+ActiveRecord::Schema.define(version: 20210615054101) do
 
   create_table "gyms", force: :cascade do |t|
+    t.string   "name"
     t.string   "location"
-    t.decimal  "capacity"
+    t.integer  "capacity"
     t.string   "description"
-    t.decimal  "treadmill"
-    t.decimal  "barbell"
-    t.decimal  "leg_press"
-    t.decimal  "locker_room"
-    t.decimal  "price_1m"
-    t.decimal  "price_3m"
-    t.decimal  "price_12m"
+    t.integer  "treadmill"
+    t.integer  "barbell"
+    t.integer  "leg_press"
+    t.integer  "locker_room"
+    t.integer  "shower_room"
+    t.integer  "price_1m"
+    t.integer  "price_3m"
+    t.integer  "price_12m"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.decimal  "shower_room"
-    t.string   "name"
   end
 
   create_table "pilates", force: :cascade do |t|
+    t.string   "name"
     t.string   "location"
-    t.decimal  "capacity"
+    t.integer  "capacity"
     t.string   "description"
-    t.decimal  "locker_room"
-    t.decimal  "price_1m"
-    t.decimal  "price_3m"
-    t.decimal  "price_12m"
+    t.integer  "locker_room"
+    t.integer  "shower_room"
+    t.integer  "price_1m"
+    t.integer  "price_3m"
+    t.integer  "price_12m"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "name"
-    t.decimal  "shower_room"
   end
 
   create_table "users", force: :cascade do |t|
@@ -51,17 +51,17 @@ ActiveRecord::Schema.define(version: 20210614090035) do
   end
 
   create_table "yogas", force: :cascade do |t|
+    t.string   "name"
     t.string   "location"
-    t.decimal  "capacity"
+    t.integer  "capacity"
     t.string   "description"
-    t.decimal  "locker_room"
-    t.decimal  "price_1m"
-    t.decimal  "price_3m"
-    t.decimal  "price_12m"
+    t.integer  "locker_room"
+    t.integer  "shower_room"
+    t.integer  "price_1m"
+    t.integer  "price_3m"
+    t.integer  "price_12m"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "name"
-    t.decimal  "shower_room"
   end
 
 end
