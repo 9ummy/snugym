@@ -1,4 +1,29 @@
 Rails.application.routes.draw do
+  get 'pil_post/index'
+  get 'pil_post/index' => 'pil_post#create'
+  get 'pil_post/index' => 'pil_post#show'
+  post 'pil_post/index' => 'pil_post#create'
+  post 'pil_post/index/:id' => 'pil_post#destroy'
+
+  get 'yoga_post/index'
+  get 'yoga_post/index' => 'yoga_post#create'
+  get 'yoga_post/index' => 'yoga_post#show'
+  post 'yoga_post/index' => 'yoga_post#create'
+  post 'yoga_post/index/:id' => 'yoga_post#destroy'
+
+  get 'pil_review/index'
+  get 'pil_review/index' => 'pil_review#show'
+  get 'pil_review/index' => 'pil_review#new'
+  post 'pil_review/index' => 'pil_review#create'
+  post 'pil_review/index/:id' => 'pil_review#destroy'  
+
+  get 'yoga_review/index'
+  get 'yoga_review/index' => 'yoga_review#show'
+  get 'yoga_review/index' => 'yoga_review#new'
+  post 'yoga_review/index' => 'yoga_review#create'
+  post 'yoga_review/index/:id' => 'yoga_review#destroy'
+
+
   get 'post/index'
   get 'post/index' => 'post#create'
   get 'post/index' => 'post#show'

@@ -1,0 +1,85 @@
+<div id="new1">    
+    <header>
+        <div class="detail-tabs">
+            <button class="green-button" onClick="location.href='/pilates/show/1'">
+              시설
+            </button>
+            <button class="green-button" onClick="location.href='./price.html'">
+              가격
+            </button>
+            <button class="green-button button-activated" onClick="location.href='/pil_post/index'">
+              참가
+            </button>
+            <button class="green-button" onClick="location.href='/pil_review/index'">
+              후기
+            </button>
+          </div>
+    </header>
+    <main>
+      <!-- PHOTO -->
+      <section>
+        <div class="arrow-button">
+          <button>
+            <img src="/images/left-arrow.png" alt="left arrow">
+          </button>
+        </div>
+        <img class="detail-image" src="/images/pilatespic1.png" alt="yoga">
+        <div class="arrow-button">
+          <button>
+            <img src="/images/right-arrow.png" alt="right arrow">
+          </button>
+        </div>
+      </section>
+
+      <!-- DIVIDER -->
+      <div class="divider">
+      </div>
+        <div class="participate">
+            <div class="upper">
+              <% @pil_posts.each do |p|%>
+                <div class="participate-1">
+                  <p><%=p.title%></p>
+                    <p class="more-info"><%=p.number%>명 모집 <%=p.time%><br></p>
+                    <button class="participate-button" onclick="alert('참가되었습니다.')">
+                        <img src="/images/tick.png" alt="참가하기">
+                    </button>
+                  <form action="/pil_post/index/<%= p.id %>" method="post">
+                    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                    <input type="submit" class="delete" value="삭제", onClick="alert('삭제하시겠습니까?')", border="none", background="none">
+                  </form>
+                </div>
+              <% end %>
+            </div>
+        </div>
+    </main>
+    <div class="scrollback">
+        <button>
+            <a href="#">
+                <img src="/images/scrollback.png">
+            </a>
+        </button>
+    </div>
+
+  <form action="/pil_post/index" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <div class="bottom-bar">
+        <div class="input">
+            <div class="upper-input">
+                <input type="text" placeholder="인원" class="people" name="number" value="">
+                <input type="text" placeholder="시간" class="time" name="time" value="">
+            </div>
+            <div class="lower-input">
+                <input type="text" placeholder="제목" class="title" name="title" value="">
+            </div>
+        </div>
+        <div class="check-button" onclick="alert('등록하시겠습니까?')">
+          <input type="image" src="/images/check.png">
+        </div>
+    </div>
+  </form>
+</div>
+
+<a href="/post/new1">새 글 쓰기</a><br /><br />
+
+
+

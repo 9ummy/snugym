@@ -1,0 +1,78 @@
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="detail-tabs">
+      <button class="green-button" onClick="location.href='/yoga/show/1'">
+        시설
+      </button>
+      <button class="green-button" onClick="location.href='./price.html'">
+        가격
+      </button>
+      <button class="green-button" onClick="location.href='/yoga_post/index'">
+        참가
+      </button>
+      <button class="green-button button-activated" onClick="location.href='/yoga_review/index'">
+        후기
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- PHOTO -->
+    <section>
+      <div class="arrow-button">
+        <button>
+          <img src="/images/left-arrow.png" alt="left arrow">
+        </button>
+      </div>
+      <img class="detail-image" src="/images/yogapic1.png" alt="gym">
+      <div class="arrow-button">
+        <button>
+          <img src="/images/right-arrow.png" alt="right arrow">
+        </button>
+      </div>
+    </section>
+    <!-- DIVIDER -->
+    <div class="divider">
+    </div>
+    <div class="review">
+      <div class="reviews">
+        <% @yoga_reviews.each do |r| %>
+        <div class="following-reviews">
+          <p class="review-title"><%= r.title %></p>
+          <p class="review-info"><%= r.point %> / 5 </p>
+          <p class="review-text"><%= r.text %></p>
+          <form action="/yoga_review/index/<%= r.id %>" method="post">
+            <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+            <input type="submit" class="delete" value="|삭제|", onClick="alert('삭제하시겠습니까?')">
+          </form>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </main>
+  <div class="scrollback">
+    <button>
+      <a href="#">
+        <img src="/images/scrollback.png">
+      </a>
+    </button>
+  </div>
+  <form action="/yoga_review/index" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <div class="bottom-bar">
+      <div class="input">
+        <div class="upper-input">
+          <input type="text" name="title" class="title" placeholder="제목"> 
+          <input type="number" name="point" min="0" max="5" step="0.5" class="point" placeholder="별점">
+        </div>
+        <div class="lower-input">
+          <input type="text" name="text" class="review" placeholder="내용">
+        </div>
+      </div>
+      <div class="check-button">
+        <input type="image" src="/images/check.png" onClick="alert('후기를 등록하시겠습니까?')">
+      </div>
+    </div>
+  </form>
+</body>
+
