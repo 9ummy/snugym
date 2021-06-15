@@ -1,6 +1,7 @@
 class ReviewController < ApplicationController
     def index
-        render gym_index_path
+        @reviews = Review.all
+        render review_index_path
     end
     
     def show
@@ -8,8 +9,12 @@ class ReviewController < ApplicationController
     end
     
     def create
-        render plain: params[:review]
+        @review = Review.new(title: params[:title],
+                             point: params[:point],
+                             text: params[:text])
+    
+        if @review.save
+            redirect_to review_index_path
+        end
     end
-    
-    
 end
