@@ -1,0 +1,2 @@
+class PilPost < ApplicationRecord
+end

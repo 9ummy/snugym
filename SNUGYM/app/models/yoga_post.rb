@@ -1,0 +1,2 @@
+class YogaPost < ApplicationRecord
+end
