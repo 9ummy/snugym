@@ -1,25 +1,29 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  name: MyString
   location: MyString
-  capacity: 
+  capacity: 1
   description: MyString
-  treadmill: 
-  barbell: 
-  leg_press: 
-  locker_room: 
-  price_1m: 
-  price_3m: 
-  price_12m: 
+  treadmill: 1
+  barbell: 1
+  leg_press: 1
+  locker_room: 1
+  shower_room: 1
+  price_1m: 1
+  price_3m: 1
+  price_12m: 1
 
 two:
+  name: MyString
   location: MyString
-  capacity: 
+  capacity: 1
   description: MyString
-  treadmill: 
-  barbell: 
-  leg_press: 
-  locker_room: 
-  price_1m: 
-  price_3m: 
-  price_12m: 
+  treadmill: 1
+  barbell: 1
+  leg_press: 1
+  locker_room: 1
+  shower_room: 1
+  price_1m: 1
+  price_3m: 1
+  price_12m: 1

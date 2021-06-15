@@ -1,0 +1,66 @@
+<!-- HEADER -->
+<div class="facility-show">
+  <header>
+    <div class="detail-tabs">
+      <button class="green-button button-activated" onClick="location.href='./facility.html'">
+        시설
+      </button>
+      <button class="green-button" onClick="location.href='/<%= @pilates.id %>/price'">
+        가격
+      </button>
+      <button class="green-button" onClick="location.href='./participate.html'">
+        참가
+      </button>
+      <button class="green-button" onClick="location.href='./review.html'">
+        후기
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- PHOTO -->
+    <section>
+      <div class="arrow-button">
+        <button>
+          <img src="/images/left-arrow.png" alt="left arrow">
+        </button>
+      </div>
+      <img class="detail-image" src="/images/gym.png" alt="gym">
+      <div class="arrow-button">
+        <button>
+          <img src="/images/right-arrow.png" alt="right arrow">
+        </button>
+      </div>
+    </section>
+  
+    <!-- DIVIDER -->
+    <div class="divider">
+    </div>
+    <!-- CONTENT -->
+    <section class="detail-content">
+      <h1>
+        <%= @pilates.name %>
+      </h1>
+      <h3>
+        <%= @pilates.description %>
+      </h3>
+      <p class="facility-info">
+        시설 정보<br/><br/>
+      </p>
+      <ol type="1">
+        <li>수용가능인원: <%= @pilates.capacity %>명</li>
+        <li>내부 시설 안내</li>
+        <ol type="a">
+          <li>개인 사물함 : <%= @pilates.locker_room %>개</li>
+          <li>샤워실: <%= @pilates.shower_room %>개</li>
+        </ol>
+      </ol>
+    </section>
+  </main>
+  <div class="scrollback">
+    <button>
+        <a href="#">
+            <img src="/images/scrollback.png">
+        </a>
+    </button>
+  </div>
+</div>

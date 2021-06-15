@@ -22,5 +22,6 @@ body {
     font-family: 'Noto Sans KR';
     position: absolute;
     top: 12%;
+    width: 100%;
     min-width: 1000px;
 }
