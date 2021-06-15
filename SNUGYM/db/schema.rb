@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20210615151332) do
+ActiveRecord::Schema.define(version: 20210615141106) do
 
   create_table "participates", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -28,6 +28,43 @@ ActiveRecord::Schema.define(version: 20210615151332) do
   create_table "realparticipates", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
+  end
+  
+  create_table "gyms", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location"
+    t.integer  "capacity"
+    t.string   "description"
+    t.integer  "treadmill"
+    t.integer  "barbell"
+    t.integer  "leg_press"
+    t.integer  "locker_room"
+    t.integer  "shower_room"
+    t.integer  "price_1m"
+    t.integer  "price_3m"
+    t.integer  "price_12m"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "pilates", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location"
+    t.integer  "capacity"
+    t.string   "description"
+    t.integer  "locker_room"
+    t.integer  "shower_room"
+    t.integer  "price_1m"
+    t.integer  "price_3m"
+    t.integer  "price_12m"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "point"
+    t.text     "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,4 +76,17 @@ ActiveRecord::Schema.define(version: 20210615151332) do
     t.datetime "updated_at",      null: false
   end
 
+  create_table "yogas", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location"
+    t.integer  "capacity"
+    t.string   "description"
+    t.integer  "locker_room"
+    t.integer  "shower_room"
+    t.integer  "price_1m"
+    t.integer  "price_3m"
+    t.integer  "price_12m"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 end

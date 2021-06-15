@@ -1,0 +1,383 @@
+.facility-new {
+    
+    button {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        ;
+    }
+    
+    button:focus {
+        outline: none;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    
+    
+    .new-header {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        width: 100%;
+        min-width: 1000px;
+        height: 12%;
+        min-height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+        
+        .header-logo {
+            width: 16%;
+            margin: 0 2%;
+            
+            img {
+                display: block;
+                height: 60px;
+                padding: 5px;
+                margin: auto;
+            }
+        }
+    
+    }
+    
+   .header-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 38%;
+        margin-right: 2%;
+        
+        a {
+          width: 25%;
+          height: 55px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #CDE0C9;
+          border-radius: 48px;
+          font-size: 20px;
+          font-weight: bold;
+          color: white;
+          text-decoration: none;
+        }
+        
+        .green-button {
+            background-color: #68B2A0;
+        }
+    }
+    
+    .button-activated {
+        background-color: #68B2A0;
+    }
+    
+   .header-search {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 48px;
+        width: 30%;
+        height: 50px;
+        background-color: #F5F5F2;
+        
+        input {
+            width: 70%;
+            margin-left: 5%;
+            border: none;
+            font-size: 18px;
+            background-color: #F5F5F2;
+        }
+        
+        .header-search-button {
+            width: 15%;
+            height: 55px;
+            padding: 0;
+            background: none;
+        }
+    
+        img {
+            height: 25px;
+        }
+    
+    }
+    
+    .header-menu {
+        width: 10%;
+    }
+    
+    .header-menu button {
+        display: block;
+        margin: auto;
+    }
+    
+    .header-menu img {
+        height: 55px;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        min-width: 1000px;
+    }
+    
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        left: 0;
+        width: 50%;
+        min-width: 720px;
+        min-height: 800px;
+        background-color: #68B2A0;
+    }
+    
+    .left img {
+        margin-top: 10%;
+        width: 67%;
+        min-width: 300px;
+    }
+    
+    .left h1 {
+        margin-top: 5.5%;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 52px;
+        color: #FFFFFF;
+        min-width: 500px;
+    }
+    
+    .whiteline {
+        margin-top: 2.2%;
+        width: 50%;
+        min-width: 300px;
+        border: 4px solid #FFFFFF;
+    }
+    
+    .left h3 {
+        margin-top: 2.2%;
+        margin-bottom: 18%;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 35px;
+        color: #FFFFFF;
+        min-width: 470px;
+    }
+    
+    .gym-right {
+        right: 0;
+        width: 50%;
+        min-width: 650px;
+        background-color: #E0ECDE;
+        display: grid;
+        grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+        grid-template-rows: repeat(28, 1fr);
+        grid-template-areas: ". . . . ."
+        ". name input-name input-name ."
+        ". location input-location input-location ."
+        ". capacity input-capacity input-capacity ."
+        ". . . . ."
+        ". equipment treadmill input-treadmill. "
+        ". equipment rack input-rack ."
+        ". equipment legpress input-legpress ."
+        ". . . . ."
+        ". locker input-locker input-locker ."
+        ". shower input-shower input-shower ."
+        ". . . . ."
+        ". price month1 input-month1 ."
+        ". price month3 input-month3 ."
+        ". price month12 input-month12 ."
+        ". . . . ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". . submit . ."
+        ". . submit . .";   
+        text-align: right;
+        font-size: 24px;
+        line-height: 34.75px;
+        font-weight: 400;
+    }
+    
+    .right {
+        right: 0;
+        width: 50%;
+        min-width: 650px;
+        background-color: #E0ECDE;
+        display: grid;
+        grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+        grid-template-rows: repeat(28, 1fr);
+        grid-template-areas: ". . . . ."
+        ". name input-name input-name ."
+        ". location input-location input-location ."
+        ". capacity input-capacity input-capacity ."
+        ". . . . ."
+        ". locker input-locker input-locker ."
+        ". shower input-shower input-shower ."
+        ". . . . ."
+        ". price month1 input-month1 ."
+        ". price month3 input-month3 ."
+        ". price month12 input-month12 ."
+        ". . . . ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". detail input-detail input-detail ."
+        ". . submit . ."
+        ". . submit . .";   
+        text-align: right;
+        font-size: 24px;
+        line-height: 34.75px;
+        font-weight: 400;
+    }
+    
+    .submit {
+        grid-area: submit;
+    }
+    
+    .submit button {
+        width: 80%;
+        height: 50%;
+        background-color: #2C6975;
+        border-radius: 24px;
+        border-color: #2C6975;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .right input {
+        width: 60%;
+        height: 40%;
+        background-color: #FFFFFF;
+        border-radius: 24px;
+        border-color: #FFFFFF;
+        padding: 5px 15px;
+        text-align: center;
+    }
+    
+    .gym-right input {
+        width: 60%;
+        height: 40%;
+        background-color: #FFFFFF;
+        border-radius: 24px;
+        border-color: #FFFFFF;
+        padding: 5px 15px;
+        text-align: center;
+    }
+    
+    .name {
+        grid-area: name;
+    }
+    
+    .input-name {
+        grid-area: input-name;
+    }
+    
+    .location {
+        grid-area: location;
+    }
+    
+    .input-location {
+        grid-area: input-location;
+    }
+    
+    .capacity {
+        grid-area: capacity;
+    }
+    
+    .input-capacity {
+        grid-area: input-capacity;
+    }
+    
+    .equipment {
+        grid-area: equipment;
+    }
+    
+    .treadmill {
+        grid-area: treadmill;
+    }
+    
+    .input-treadmill {
+        grid-area: input-treadmill;
+    }
+    
+    .rack {
+        grid-area: rack;
+    }
+    
+    .input-rack {
+        grid-area: input-rack;
+    }
+    
+    .legpress {
+        grid-area: legpress;
+    }
+    
+    .input-legpress {
+        grid-area: input-legpress;
+    }
+    
+    .locker {
+        grid-area: locker;
+    }
+    
+    .input-locker {
+        grid-area: input-locker;
+    }
+    
+    .shower {
+        grid-area: shower;
+    }
+    
+    .input-shower {
+        grid-area: input-shower;
+    }
+    
+    .price {
+        grid-area: price;
+    }
+    
+    .month1 {
+        grid-area: month1;
+    }
+    
+    .input-month1 {
+        grid-area: input-month1;
+    }
+    
+    .month3 {
+        grid-area: month3;
+    }
+    
+    .input-month3 {
+        grid-area: input-month3;
+    }
+    
+    .month12 {
+        grid-area: month12;
+    }
+    
+    .input-month12 {
+        grid-area: input-month12;
+    }
+    
+    .detail {
+        grid-area: detail;
+    }
+    
+    .input-detail {
+        grid-area: input-detail;
+    }
+}

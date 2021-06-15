@@ -1,0 +1,64 @@
+<div class="facility-index">
+    <header>
+        <div class="header-logo">
+            <a href="index">
+                <img src="/images/logo.png">
+            </a>
+        </div>
+        <div class="header-buttons">
+            <a href="/gym">
+                헬스
+            </a>
+            <a href="/yoga" class="green-button">
+                요가
+            </a>
+            <a href="/pilates">
+                필라테스
+            </a>
+        </div>
+        <div class="header-search">
+            <input type="text">
+            <button class="header-search-button">
+                <img src="/images/search.png" alt="search icon"/>
+            </button>
+        </div>
+        <div class="header-menu" onclick="showPopup();">
+            <button>
+                <img src="/images/hamburger.png" alt="hamburger"/>
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <div class="top">
+            <% @yogas.each do |yoga| %>
+                <div class="pic">
+                    <img src="/images/fitness_2.png" alt="fitness_2">
+                    <p class="title">
+                        <a href="/yoga/show/<%= yoga.id %>" target="_blank">
+                            <%= yoga.name %>
+                        </a>
+                        <!--<%= link_to yoga.name, @yoga %>-->
+                    </p>
+                    <p class="location"><%= yoga.location %></p>
+                </div>
+            <% end %>
+        </div>
+    </main> 
+    
+    <div class="plusbutton">
+        <button>
+          <a href="/yoga/new">
+            <img src="/images/plusbutton.png">
+          </a>
+        </button>
+      </div>    
+    
+    <div class="upbutton">
+        <button>
+          <a href="#">
+            <img src="/images/upbutton.png">
+          </a>
+        </button>
+     </div>
+</div>
