@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'review/index'
+  get 'review/index' => 'review#show'
+  get 'review/index' => 'review#new'
+  post 'review/index' => 'review#create'
 
   # get 'gym', to: 'gym#index'
   # get 'gym/:id', to: 'gym#show'

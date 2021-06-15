@@ -41,11 +41,11 @@
           <p class="review-info">예은 / 4.5 / 2021-04-21</p>
           <p class="review-text">사실 헬스를 한 번도 해본 적이 없어서 과연 잘 할 수 있을까 걱정이 되었거든요! 그런데 헬스장에서 가르쳐주시는 쌤들이 진짜 친절해서 훨씬 재밌고 쉽게 운동을 할 수 있었던 것 같아요! 6개월 동안 다니다 이제 이사해서 더는 다니지 않게 될 것 같아요 ㅠ 그래도 운동은 언젠가 또 하고 싶네요! </p>
         </div>
-        <% @reviews.each do |review| %>
+        <% @reviews.each do |r| %>
         <div class="review2">
-          <p class="review-title"><%= review.title %>></p>
-          <p class="review-info"><%= review.point %></p>
-          <p class="review-text"><%= review.text %></p>
+          <p class="review-title"><%= r.title %></p>
+          <p class="review-info"><%= r.point %></p>
+          <p class="review-text"><%= r.text %></p>
         </div>
         <% end %>
       </div>
@@ -58,21 +58,21 @@
       </a>
     </button>
   </div>
-  <%= form_tag review_index_path do %>
-  <div class="bottom-bar">
-    <div class="input">
-      <div class="upper-input">
-        <input type="text" name="title" class="title" placeholder="제목"> 
-        <input type="number" name="point" min="0" max="5" step="0.5" class="point" placeholder="별점">
+  <form action="/review/index" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <div class="bottom-bar">
+      <div class="input">
+        <div class="upper-input">
+          <input type="text" name="title" class="title" placeholder="제목"> 
+          <input type="number" name="point" min="0" max="5" step="0.5" class="point" placeholder="별점">
+        </div>
+        <div class="lower-input">
+          <input type="text" name="text" class="review" placeholder="내용">
+        </div>
       </div>
-      <div class="lower-input">
-        <input type="text" name="text" class="review" placeholder="내용">
+      <div class="check-button">
+        <input type="image" src="/images/check.png">
       </div>
     </div>
-    <div class="check-button">
-      <input type="image" src="/images/check.png">
-    </div>
-  </div>
-  <% end %>
+  </form>
 </body>
-</html> 
