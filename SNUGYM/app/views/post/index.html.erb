@@ -1,16 +1,16 @@
 <div id="new1">    
     <header>
         <div class="detail-tabs">
-            <button class="green-button" onClick="location.href='./facility.html'">
+            <button class="green-button" onClick="location.href='/gym/show/1'">
               시설
             </button>
             <button class="green-button" onClick="location.href='./price.html'">
               가격
             </button>
-            <button class="green-button button-activated" onClick="location.href='./participate.html'">
+            <button class="green-button button-activated" onClick="location.href='/post/index'">
               참가
             </button>
-            <button class="green-button" onClick="location.href='./review.html'">
+            <button class="green-button" onClick="location.href='/review/index'">
               후기
             </button>
           </div>
@@ -43,8 +43,12 @@
                     <button class="participate-button" onclick="alert('참가되었습니다.')">
                         <img src="/images/tick.png" alt="참가하기">
                     </button>
+                  <form action="/post/index/<%= p.id %>" method="post">
+                    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                    <input type="submit" class="delete" value="삭제", onClick="alert('삭제하시겠습니까?')", border="none", background="none">
+                  </form>
                 </div>
-                <% end %>
+              <% end %>
             </div>
         </div>
     </main>
@@ -56,10 +60,8 @@
         </button>
     </div>
 
-   <form action="/post/create" method="post">
+  <form action="/post/index" method="post">
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-
-
     <div class="bottom-bar">
         <div class="input">
             <div class="upper-input">
@@ -70,11 +72,11 @@
                 <input type="text" placeholder="제목" class="title" name="title" value="">
             </div>
         </div>
-        <div class="check-button" onclick="alert('작성되었습니다.')">
+        <div class="check-button" onclick="alert('등록하시겠습니까?')">
           <input type="image" src="/images/check.png">
         </div>
     </div>
-   </form>
+  </form>
 </div>
 
 <a href="/post/new1">새 글 쓰기</a><br /><br />

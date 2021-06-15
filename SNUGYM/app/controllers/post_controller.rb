@@ -11,11 +11,14 @@ class PostController < ApplicationController
     @post.number = params[:number]
     @post.time = params[:time]
     @post.title = params[:title]
-    @post.save
 
-    redirect_to '/post/index'
-    
-
+    if @post.save
+      redirect_to post_index_path
+    end
+  end
+  
+  def show
+    @post = Post.find(params[:id])
   end
 
   def edit
@@ -23,7 +26,11 @@ class PostController < ApplicationController
 
   def update
   end
-
+  
   def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    
+    redirect_to '/post/index'
   end
 end

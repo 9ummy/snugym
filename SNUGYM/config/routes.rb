@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
   get 'post/index'
-  get 'post/new1'
-  get 'post/create'
-  post 'post/create'
-  get 'post/edit'
-  get 'post/update'
-  get 'post/destroy'  
+  get 'post/index' => 'post#create'
+  get 'post/index' => 'post#show'
+  post 'post/index' => 'post#create'
+  post 'post/index/:id' => 'post#destroy'
   
   get 'review/index'
   get 'review/index' => 'review#show'
@@ -31,8 +29,6 @@ Rails.application.routes.draw do
   get 'pilates/new', to: 'pilates#new'
   post 'pilates/new', to: 'pilates#create'
   
-  get 'sessions/new'
-  get 'users/new'
   
   root 'users#new'
   

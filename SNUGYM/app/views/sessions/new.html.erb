@@ -52,20 +52,20 @@
             <div class="main-login-right-sessions">
                 <section>
                     <%= form_tag sessions_path do %>
-                    <p>
-                        아이디 <br>
-                        <input type="text" name="name">
-                    </p>
-                    <p>
-                        비밀번호 <br>
-                        <input type="password" name="password">
-                    </p>
-                    <h4>
-                        <input type="submit" value="로그인하기">
-                        <div class="notice-sessions">
-                            <%= flash[:alert] %><br>
-                        </div>
-                    </h4>
+                        <p>
+                            아이디 <br>
+                            <input type="text" name="name">
+                        </p>
+                        <p>
+                            비밀번호 <br>
+                            <input type="password" name="password">
+                        </p>
+                        <h4>
+                            <input type="submit" value="로그인하기">
+                            <div class="notice-sessions">
+                                <%= flash[:alert] %><br>
+                            </div>
+                        </h4>
                     <% end %>
                 </section>
             </div>
