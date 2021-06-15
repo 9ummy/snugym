@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'gym/show/:id', to: 'gym#show'
   get 'gym/new', to: 'gym#new'
   post 'gym/new', to: 'gym#create'
+  get 'gym/search', to: 'gym#search'
   
   get 'yoga', to: 'yoga#index'
   get 'yoga/show/:id', to: 'yoga#show'

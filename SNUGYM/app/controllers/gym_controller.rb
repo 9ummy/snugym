@@ -11,6 +11,10 @@ class GymController < ApplicationController
     @gym = Gym.find(params[:id])
   end
   
+  def search
+    render gym_search_path
+  end
+  
   def create
       @gym = Gym.new(name: params[:name],
                   location: params[:location], 
