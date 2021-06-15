@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # get 'gym', to: 'gym#index'
   # get 'gym/:id', to: 'gym#show'
   
@@ -20,13 +21,11 @@ Rails.application.routes.draw do
   get 'sessions/new'
   get 'users/new'
   
-  get 'reviews/new'
   
   root 'users#new'
   
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create]
-  resources :reviews
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
