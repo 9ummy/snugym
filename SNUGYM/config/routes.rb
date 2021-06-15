@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'review/index'
 
   # get 'gym', to: 'gym#index'
   # get 'gym/:id', to: 'gym#show'
@@ -26,6 +27,5 @@ Rails.application.routes.draw do
   
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create]
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
