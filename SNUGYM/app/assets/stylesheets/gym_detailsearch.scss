@@ -1,0 +1,169 @@
+#gym-detailsearch {
+    display: flex;
+    border-style: solid;
+    border-radius: 24px;
+    border-color: #68b2a0;
+    border-width: 2px;
+    width: 70%;
+    min-width: 1000px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    button {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        ;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .left {
+        display: grid;
+        grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-areas: ". . . . ."
+        ". name input-name input-name ."
+        ". . . . ."
+        ". location input-location input-location ."
+        ". . . . ."
+        ". capacity input-capacity input-capacity ."
+        ". . . . ."
+        ". price input-price_1m input-price_1m ."
+        ". . input-price_3m input-price_3m ."
+        ". . input-price_12m input-price_12m ."
+        ". . . . .";
+        text-align: center;
+        font-size: 24px;
+        line-height: 34.75px;
+        font-weight: 400;
+    }
+
+    .left input {
+        width: 60%;
+        height: 40%;
+        background-color: #FFFFFF;
+        border-radius: 24px;
+        border-color: black;
+        border-width: 1px;
+        padding: 5px 15px;
+        text-align: center;
+    }
+
+    .name {
+        grid-area: name;
+    }
+
+    .input-name {
+        grid-area: input-name;
+    }
+
+    .location {
+        grid-area: location;
+    }
+
+    .input-location {
+        grid-area: input-location;
+    }
+
+    .capacity {
+        grid-area: capacity;
+    }
+
+    .input-capacity {
+        grid-area: input-capacity;
+    }
+
+    .price {
+        grid-area: price;
+    }
+
+    .input-price_1m {
+        grid-area: input-price_1m;
+    }
+
+    .input-price_3m {
+        grid-area: input-price_3m;
+    }
+
+    .input-price_12m {
+        grid-area: input-price_12m;
+    }
+
+    .right {
+        display: grid;
+        grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-areas: ". . . . ."
+        ". running input-running input-running ."
+        ". . . . ."
+        ". barbell input-barbell input-barbell ."
+        ". . . . ."
+        ". legpress input-legpress input-legpress ."
+        ". . . . ."
+        ". . . . ."
+        ". . . . ."
+        ". . submit . ."
+        ". . submit . .";
+        text-align: center;
+        font-size: 24px;
+        line-height: 34.75px;
+        font-weight: 400;
+    }
+
+    .right input {
+        width: 60%;
+        height: 40%;
+        background-color: #FFFFFF;
+        border-radius: 24px;
+        border-color: black;
+        border-width: 1px;
+        padding: 5px 15px;
+        text-align: center;
+    }
+
+    .running {
+        grid-area: running;
+    }
+
+    .input-running {
+        grid-area: input-running;
+    }
+
+    .barbell {
+        grid-area: barbell;
+    }
+
+    .input-barbell {
+        grid-area: input-barbell;
+    }
+
+    .legpress {
+        grid-area: legpress;
+    }
+
+    .input-legpress {
+        grid-area: input-legpress;
+    }
+
+    .submit {
+        grid-area: submit;
+    }
+
+    .submit button {
+        width: 100%;
+        height: 50%;
+        background-color: #2C6975;
+        border-radius: 24px;
+        border-style: none;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

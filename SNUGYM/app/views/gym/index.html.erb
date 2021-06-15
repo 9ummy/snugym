@@ -17,14 +17,21 @@
             </a>
         </div>
         <div class="header-search">
-            <input type="text">
-            <button class="header-search-button">
-                <img src="/images/search.png" alt="search icon"/>
-            </button>
+            <div class="header-search-input">
+                <%= form_tag(gym_search_path, method: "get") do %>
+                <%= search_field_tag :search, params[:search] %>
+                    <button class="header-search-button">
+                    <img src="/images/search.png" alt="search icon"/>
+                    <%= button_tag "" %>
+                    </button>
+                <% end %>
+            </div>
         </div>
-        <div class="header-menu" onclick="showPopup();">
+        <div class="header-menu">
             <button>
-                <img src="/images/hamburger.png" alt="hamburger"/>
+                <a href="/gym/detailsearch">
+                    <img src="/images/hamburger.png" alt="hamburger"/>
+                </a>
             </button>
         </div>
     </header>
