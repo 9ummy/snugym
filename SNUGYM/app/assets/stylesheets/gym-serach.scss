@@ -27,7 +27,7 @@
     .left {
         display: grid;
         grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: repeat(11, 1fr);
         grid-template-areas: ". . . . ."
         ". type input-type input-type ."
         ". . . . ."
@@ -35,7 +35,9 @@
         ". . . . ."
         ". capacity input-capacity input-capacity ."
         ". . . . ."
-        ". price input-price input-price ."
+        ". price input-price_1m input-price_1m ."
+        ". . input-price_3m input-price_3m ."
+        ". . input-price_12m input-price_12m ."
         ". . . . .";
         text-align: center;
         font-size: 24px;
@@ -82,20 +84,30 @@
         grid-area: price;
     }
     
-    .input-price {
-        grid-area: input-price;
+    .input-price_1m {
+        grid-area: input-price_1m;
+    }
+    
+    .input-price_3m {
+        grid-area: input-price_3m;
+    }
+    
+    .input-price_12m {
+        grid-area: input-price_12m;
     }
     
     .right {
         display: grid;
         grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: repeat(11, 1fr);
         grid-template-areas: ". . . . ."
         ". running input-running input-running ."
         ". . . . ."
         ". barbell input-barbell input-barbell ."
         ". . . . ."
         ". legpress input-legpress input-legpress ."
+        ". . . . ."
+        ". . . . ."
         ". . . . ."
         ". . submit . ."
         ". . submit . .";
