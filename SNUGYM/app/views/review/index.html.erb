@@ -1,0 +1,83 @@
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="detail-tabs">
+      <button class="green-button" onClick="location.href='./facility.html'">
+        시설
+      </button>
+      <button class="green-button" onClick="location.href='./price.html'">
+        가격
+      </button>
+      <button class="green-button" onClick="location.href='./participate.html'">
+        참가
+      </button>
+      <button class="green-button button-activated" onClick="location.href='./review.html'">
+        후기
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- PHOTO -->
+    <section>
+      <div class="arrow-button">
+        <button>
+          <img src="/images/left-arrow.png" alt="left arrow">
+        </button>
+      </div>
+      <img class="detail-image" src="/images/gym.png" alt="gym">
+      <div class="arrow-button">
+        <button>
+          <img src="/images/right-arrow.png" alt="right arrow">
+        </button>
+      </div>
+    </section>
+    <!-- DIVIDER -->
+    <div class="divider">
+    </div>
+    <div class="review">
+      <div class="reviews">
+        <div class="review-sample">
+          <p class="review-title">또 다니고 싶네요</p>
+          <p class="review-info">4.5 / 5</p>
+          <p class="review-text">사실 헬스를 한 번도 해본 적이 없어서 과연 잘 할 수 있을까 걱정이 되었거든요! 그런데 헬스장에서 가르쳐주시는 쌤들이 진짜 친절해서 훨씬 재밌고 쉽게 운동을 할 수 있었던 것 같아요! 6개월 동안 다니다 이제 이사해서 더는 다니지 않게 될 것 같아요 ㅠ 그래도 운동은 언젠가 또 하고 싶네요! </p>
+          <input type="submit" class="delete" value="|삭제|">
+        </div>
+        <% @reviews.each do |r| %>
+        <div class="following-reviews">
+          <p class="review-title"><%= r.title %></p>
+          <p class="review-info"><%= r.point %> / 5 </p>
+          <p class="review-text"><%= r.text %></p>
+          <form action="/review/index/<%= r.id %>" method="post">
+            <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+            <input type="submit" class="delete" value="|삭제|", onClick="alert('삭제하시겠습니까?')">
+          </form>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </main>
+  <div class="scrollback">
+    <button>
+      <a href="#">
+        <img src="/images/scrollback.png">
+      </a>
+    </button>
+  </div>
+  <form action="/review/index" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <div class="bottom-bar">
+      <div class="input">
+        <div class="upper-input">
+          <input type="text" name="title" class="title" placeholder="제목"> 
+          <input type="number" name="point" min="0" max="5" step="0.5" class="point" placeholder="별점">
+        </div>
+        <div class="lower-input">
+          <input type="text" name="text" class="review" placeholder="내용">
+        </div>
+      </div>
+      <div class="check-button">
+        <input type="image" src="/images/check.png" onClick="alert('후기를 등록하시겠습니까?')">
+      </div>
+    </div>
+  </form>
+</body>

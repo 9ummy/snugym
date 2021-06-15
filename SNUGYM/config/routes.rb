@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'review/index'
+  get 'review/index' => 'review#show'
+  get 'review/index' => 'review#new'
+  post 'review/index' => 'review#create'
+  post 'review/index/:id' => 'review#destroy'
+
   # get 'gym', to: 'gym#index'
   # get 'gym/:id', to: 'gym#show'
   
@@ -20,10 +26,10 @@ Rails.application.routes.draw do
   get 'sessions/new'
   get 'users/new'
   
+  
   root 'users#new'
   
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create]
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
