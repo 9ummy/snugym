@@ -38,13 +38,13 @@
       <div class="reviews">
         <div class="review1">
           <p class="review-title">또 다니고 싶네요</p>
-          <p class="review-info">예은 / 4.5 / 2021-04-21</p>
+          <p class="review-info">4.5 / 5</p>
           <p class="review-text">사실 헬스를 한 번도 해본 적이 없어서 과연 잘 할 수 있을까 걱정이 되었거든요! 그런데 헬스장에서 가르쳐주시는 쌤들이 진짜 친절해서 훨씬 재밌고 쉽게 운동을 할 수 있었던 것 같아요! 6개월 동안 다니다 이제 이사해서 더는 다니지 않게 될 것 같아요 ㅠ 그래도 운동은 언젠가 또 하고 싶네요! </p>
         </div>
         <% @reviews.each do |r| %>
         <div class="review2">
           <p class="review-title"><%= r.title %></p>
-          <p class="review-info"><%= r.point %></p>
+          <p class="review-info"><%= r.point %> / 5 </p>
           <p class="review-text"><%= r.text %></p>
         </div>
         <% end %>
