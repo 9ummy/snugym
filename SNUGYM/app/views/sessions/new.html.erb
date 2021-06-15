@@ -1,83 +1,74 @@
-<!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>SNUGYM</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class="header-sessions">
-            <div class="header-logo-sessions">
-                <a href="/users/new" style="text-decoration: none">
-                    <img src="/images/whitelogo.png">
-                </a>
-            </div>
-            <div class="header-buttons-sessions">
-                <button class="button-activated">
-                   <a href="/users/new" style="color: white; text-decoration: none">메인</a>
-                </button>
-                <button>
-                    공지
-                </button>
-                <button>
-                    문의
-                </button>
-            </div>
-            <div class ="header-login-sessions">
-                <a href="login.html">
-                <button>
-                    <a href="/sessions/new" style="text-decoration: none; color: white">로그인</a>
-                </button>
-                </a>
-            </div>
-            <div class="header-search-sessions">
-                <button>
-                    <img src="/images/whitesearch.png" alt="search icon"/>
-                </button>
-            </div>
-            <div class="header-instagram-sessions">
-                <button>
-                    <img src="/images/instagram 2.png">
-                </button>
-            </div>
-        </header>
-        <main class="login-main">
-            <div class="main-login-sessions">
-                <img src="/images/gympic11.png">
-                <div style="white-space: nowrap;" class="main-login-left-sessions">
-                    <h1>
-                        이제는 <br>
-                        정착할 시간이에요.
-                    </h1>
-                    <div class="whiteline">
-                    </div>
-                    <h3>
-                        헬스장, 필라테스, 그리고 요가까지 <br>
-                        멀리 갈 필요는 없답니다.
-                    </h3>
+<body>
+    <header class="header-sessions">
+        <div class="header-logo-sessions">
+            <a href="/users/new" style="text-decoration: none">
+                <img src="/images/whitelogo.png">
+            </a>
+        </div>
+        <div class="header-buttons-sessions">
+            <button class="button-activated">
+               <a href="/users/new" style="color: white; text-decoration: none">메인</a>
+            </button>
+            <button>
+                공지
+            </button>
+            <button>
+                문의
+            </button>
+        </div>
+        <div class ="header-login-sessions">
+            <a href="login.html">
+            <button>
+                <a href="/sessions/new" style="text-decoration: none; color: white">로그인</a>
+            </button>
+            </a>
+        </div>
+        <div class="header-search-sessions">
+            <button>
+                <img src="/images/whitesearch.png" alt="search icon"/>
+            </button>
+        </div>
+        <div class="header-instagram-sessions">
+            <button>
+                <img src="/images/instagram 2.png">
+            </button>
+        </div>
+    </header>
+    <main class="login-main">
+        <div class="main-login-sessions">
+            <img src="/images/gympic11.png">
+            <div style="white-space: nowrap;" class="main-login-left-sessions">
+                <h1>
+                    이제는 <br>
+                    정착할 시간이에요.
+                </h1>
+                <div class="whiteline">
                 </div>
-                <div class="main-login-right-sessions">
-                    <section>
-                        <%= form_tag sessions_path do %>
-                        <p>
-                            아이디 <br>
-                            <input type="text" name="name">
-                        </p>
-                        <p>
-                            비밀번호 <br>
-                            <input type="password" name="password">
-                        </p>
-                        <h4>
-                            <input type="submit" value="로그인하기">
-                            <div class="notice-sessions">
-                                <%= flash[:alert] %><br>
-                            </div>
-                        </h4>
-                        <% end %>
-                    </section>
-                </div>
+                <h3>
+                    헬스장, 필라테스, 그리고 요가까지 <br>
+                    멀리 갈 필요는 없답니다.
+                </h3>
             </div>
-        </main>
-    </body>
-</html>
+            <div class="main-login-right-sessions">
+                <section>
+                    <%= form_tag sessions_path do %>
+                    <p>
+                        아이디 <br>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        비밀번호 <br>
+                        <input type="password" name="password">
+                    </p>
+                    <h4>
+                        <input type="submit" value="로그인하기">
+                        <div class="notice-sessions">
+                            <%= flash[:alert] %><br>
+                        </div>
+                    </h4>
+                    <% end %>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
