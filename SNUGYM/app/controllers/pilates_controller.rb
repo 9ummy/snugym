@@ -11,6 +11,14 @@ class PilatesController < ApplicationController
     @pilate = Pilate.find(params[:id])
   end
     
+  def search
+    if params[:search].blank?
+      redirect_to pilates_path and return
+    else
+      @pilates = Pilate.all.where("name LIKE ?", "%#{params[:search]}%")
+    end
+  end  
+    
   def create
     @pilate = Pilate.new(name: params[:name],
                 location: params[:location], 

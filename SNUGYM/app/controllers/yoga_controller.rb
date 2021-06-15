@@ -11,6 +11,14 @@ class YogaController < ApplicationController
     @yoga = Yoga.find(params[:id])
   end
   
+  def search
+    if params[:search].blank?
+      redirect_to yoga_path and return
+    else
+      @yogas = Yoga.all.where("name LIKE ?", "%#{params[:search]}%")
+    end
+  end
+  
   def create
       @yoga = Yoga.new(name: params[:name],
                   location: params[:location], 

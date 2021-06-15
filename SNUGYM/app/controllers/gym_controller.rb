@@ -11,6 +11,14 @@ class GymController < ApplicationController
     @gym = Gym.find(params[:id])
   end
   
+  def search
+    if params[:search].blank?
+      redirect_to gym_path and return
+    else
+      @gyms = Gym.all.where("name LIKE ?", "%#{params[:search]}%")
+    end
+  end
+  
   def detailsearch
     render gym_detailsearch_path
   end
