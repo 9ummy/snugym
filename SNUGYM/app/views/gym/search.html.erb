@@ -6,10 +6,10 @@
             </a>
         </div>
         <div class="header-buttons">
-            <a href="/gym">
+            <a href="/gym" class="green-button">
                 헬스
             </a>
-            <a href="/yoga" class="green-button">
+            <a href="/yoga">
                 요가
             </a>
             <a href="/pilates">
@@ -18,7 +18,7 @@
         </div>
         <div class="header-search">
             <div class="header-search-input">
-                <%= form_tag(yoga_search_path, method: "get") do %>
+                <%= form_tag(gym_search_path, method: "get") do %>
                 <%= search_field_tag :search, params[:search] %>
                     <button class="header-search-button">
                     <img src="/images/search.png" alt="search icon"/>
@@ -27,38 +27,40 @@
                 <% end %>
             </div>
         </div>
-        <div class="header-menu" onclick="showPopup();">
+        <div class="header-menu">
             <button>
-                <img src="/images/hamburger.png" alt="hamburger"/>
+                <a href="/gym/detailsearch">
+                    <img src="/images/hamburger.png" alt="hamburger"/>
+                </a>
             </button>
         </div>
     </header>
-    
+
     <main>
         <div class="top">
-            <% @yogas.each do |yoga| %>
+            <% @gyms.each do |gym| %>
                 <div class="pic">
-                    <img src="/images/fitness_2.png" alt="fitness_2">
+                    <img src="/images/fitness_1.png" alt="fitness_1">
                     <p class="title">
-                        <a href="/yoga/show/<%= yoga.id %>" target="_blank">
-                            <%= yoga.name %>
+                        <a href="/gym/show/<%= gym.id %>" target="_blank">
+                            <%= gym.name %>
                         </a>
-                        <!--<%= link_to yoga.name, @yoga %>-->
+                        <!--<%= link_to gym.name, @gym %>-->
                     </p>
-                    <p class="location"><%= yoga.location %></p>
+                    <p class="location"><%= gym.location %></p>
                 </div>
             <% end %>
         </div>
     </main> 
-    
+
     <div class="plusbutton">
         <button>
-          <a href="/yoga/new">
+          <a href="/gym/new">
             <img src="/images/plusbutton.png">
           </a>
         </button>
       </div>    
-    
+
     <div class="upbutton">
         <button>
           <a href="#">

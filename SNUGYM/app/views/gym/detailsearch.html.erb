@@ -1,0 +1,59 @@
+<%= form_tag(gym_detailsearchresult_path, method: "get") do %>
+<div id="gym-detailsearch">
+    <div class="left">
+        <div class="name">
+            이름
+        </div>
+        <div class="input-name">
+            <%= search_field_tag :searchname, params[:searchname] %>
+        </div>
+        <div class="location">
+            위치
+        </div>
+        <div class="input-location">
+            <%= search_field_tag :searchlocation, params[:searchlocation] %>
+        </div>
+        <div class="capacity">
+            수용 가능 인원
+        </div>
+        <div class="input-capacity">
+            <%= search_field_tag :searchcapacity, params[:searchcapacity] %>
+        </div>
+        <div class="price">
+            가격
+        </div>
+        <div class="input-price_1m">
+            <%= search_field_tag :searchprice_1m, params[:searchprice_1m] %>
+        </div>
+        <div class="input-price_3m">
+            <%= search_field_tag :searchprice_3m, params[:searchprice_3m] %>
+        </div>
+        <div class="input-price_12m">
+            <%= search_field_tag :searchprice_12m, params[:searchprice_12m] %>
+        </div>
+    </div>  
+    <div class="right">
+        <div class="running">
+            런닝머신
+        </div>
+        <div class="input-running">
+            <%= search_field_tag :searchtreadmill, params[:searchtreadmill] %>
+        </div>
+        <div class="barbell">
+            바벨랙
+        </div>
+        <div class="input-barbell">
+            <%= search_field_tag :searchbarbell, params[:searchbarbell] %>
+        </div>
+        <div class="legpress">
+            레그 프레스
+        </div>
+        <div class="input-legpress">
+            <%= search_field_tag :searchleg_press, params[:searchleg_press] %>
+        </div>
+        <div class="submit">
+                <%= button_tag "검색하기" %>
+        </div>
+    </div>
+</div>
+<% end %> 

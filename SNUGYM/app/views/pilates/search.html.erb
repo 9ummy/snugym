@@ -9,16 +9,16 @@
             <a href="/gym">
                 헬스
             </a>
-            <a href="/yoga" class="green-button">
+            <a href="/yoga">
                 요가
             </a>
-            <a href="/pilates">
+            <a href="/pilates" class="green-button">
                 필라테스
             </a>
         </div>
         <div class="header-search">
             <div class="header-search-input">
-                <%= form_tag(yoga_search_path, method: "get") do %>
+                <%= form_tag(pilates_search_path, method: "get") do %>
                 <%= search_field_tag :search, params[:search] %>
                     <button class="header-search-button">
                     <img src="/images/search.png" alt="search icon"/>
@@ -33,32 +33,32 @@
             </button>
         </div>
     </header>
-    
+
     <main>
         <div class="top">
-            <% @yogas.each do |yoga| %>
+            <% @pilates.each do |pilate| %>
                 <div class="pic">
-                    <img src="/images/fitness_2.png" alt="fitness_2">
+                    <img src="/images/fitness_9.png" alt="fitness_9">
                     <p class="title">
-                        <a href="/yoga/show/<%= yoga.id %>" target="_blank">
-                            <%= yoga.name %>
+                        <a href="/pilates/show/<%= pilate.id %>" target="_blank">
+                            <%= pilate.name %>
                         </a>
-                        <!--<%= link_to yoga.name, @yoga %>-->
+                        <!--<%= link_to pilate.name, @pilate %>-->
                     </p>
-                    <p class="location"><%= yoga.location %></p>
+                    <p class="location"><%= pilate.location %></p>
                 </div>
             <% end %>
         </div>
     </main> 
-    
+
     <div class="plusbutton">
         <button>
-          <a href="/yoga/new">
+          <a href="/pilates/new">
             <img src="/images/plusbutton.png">
           </a>
         </button>
       </div>    
-    
+
     <div class="upbutton">
         <button>
           <a href="#">
