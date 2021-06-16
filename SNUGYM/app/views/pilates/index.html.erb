@@ -17,7 +17,7 @@
             </a>
         </div>
         <div class="header-search">
-            <div class="header-search-input">
+            <div>
                 <%= form_tag(pilates_search_path, method: "get") do %>
                 <%= search_field_tag :search, params[:search] %>
                     <button class="header-search-button">
@@ -26,7 +26,8 @@
                     </button>
                 <% end %>
             </div>
-        <div class="header-menu" onclick="showPopup();">
+        </div>
+        <div class="header-menu">
             <button>
                 <img src="/images/hamburger.png" alt="hamburger"/>
             </button>
